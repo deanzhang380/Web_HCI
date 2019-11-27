@@ -1,0 +1,15 @@
+.BackGround{
+    
+}
+
+.style-all{
+    float: left;
+    display: inline!important;
+}
+
+.font-style{
+    align-items: flex-end;
+    margin-top: 60px;
+    font-size: 24px!important;
+    background-color: white!important;
+}

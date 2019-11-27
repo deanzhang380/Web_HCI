@@ -1,0 +1,12 @@
+.App-Header{
+    height: 100px ;
+    width: 100%!important;
+}
+
+.App-Container{
+    padding-right: 0px!important;
+    padding-left:  0px!important;
+    margin-right:  0px!important;
+    margin-left:  0px!important;
+    max-width: 100%!important;
+}
