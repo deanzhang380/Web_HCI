@@ -16,13 +16,13 @@
   }
 
 .carousel-style{
-  background-color: gray;
+  
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   width: 40px !important;
   height: 40px !important;
-  background-color: gray !important;
+  
 }
 
 .carousel-control-prev-icon{

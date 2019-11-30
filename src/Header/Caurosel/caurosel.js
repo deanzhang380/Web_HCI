@@ -7,7 +7,6 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import './caurosel.css';
-import MenuBar from './../Navbar/navbar.js';
 import img1 from './../../Img/img1.jpg'
 import img2 from './../../Img/img2.jpg'
 import img3 from './../../Img/img3.jpg'
@@ -62,7 +61,7 @@ const Slider_Show = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img width={1500} height={700} src={item.src} alt={item.altText} />
+        <img width={2000} height={700} src={item.src} alt={item.altText} />
         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
@@ -74,7 +73,7 @@ const Slider_Show = (props) => {
       next={next}
       previous={previous}
     >
-     
+
       <CarouselIndicators className="caurousel-indi" items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />

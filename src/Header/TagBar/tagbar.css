@@ -1,0 +1,20 @@
+.btn-style{
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.div-tagbar{
+    display: inline-flex;
+    text-align: center;
+}
+
+.drop_down_toggle{
+    width: 150px;
+    font-size: 20px !important;
+}
+
+.btn-seeall{
+    margin-right:100px !important;
+    font-size: 25px !important;
+    color: blue !important;
+}

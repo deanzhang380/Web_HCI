@@ -1,0 +1,25 @@
+.outside{
+    border: 1px black solid;
+    text-align: left;
+    width: 400px;
+    height: max-content;
+    padding: 30px;
+}
+
+.Title{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.ci_co{
+    display: flex;
+}
+
+.guests_input{
+    display: flex;
+}
+
+.link{
+    text-align: right;
+}
