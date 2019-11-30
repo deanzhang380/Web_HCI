@@ -13,6 +13,7 @@ const Form_fast_book = (props) => {
 
   const toggleSplit = () => setSplitButtonOpen(!splitButtonOpen);
   return (
+    <div className="div_form">
     <Form className="outside">
         <div className="Title">
         <Label>
@@ -57,6 +58,8 @@ const Form_fast_book = (props) => {
       </FormGroup>
       <Button>Submit</Button>
     </Form>
+    <Button className="btn_random"> Random Place</Button>
+    </div>
   );
 }
 

@@ -6,6 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import Form_fast_book from './../Form_fast_book/form'
 import './caurosel.css';
 import img1 from './../../Img/img1.jpg'
 import img2 from './../../Img/img2.jpg'
@@ -68,17 +69,20 @@ const Slider_Show = (props) => {
   });
 
   return (
-    <Carousel className="carousel-style"
+    <div>
+    <Carousel className="carousel-style div_relative"
       activeIndex={activeIndex}
       next={next}
       previous={previous}
     >
-
+      
       <CarouselIndicators className="caurousel-indi" items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
+    <Form_fast_book ></Form_fast_book>
+    </div>
   );
 }
 
