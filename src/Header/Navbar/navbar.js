@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -10,21 +10,23 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-} from 'reactstrap';
+  DropdownItem
+} from "reactstrap";
 
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from "reactstrap";
 
-import './navbar.css'
-import { Media } from 'reactstrap';
-import Logo_img from './../../Img/logo.png'
+import "./navbar.css";
+import Profile from "./../../General/User/Profile/profile";
+import { Media } from "reactstrap";
+import Logo_img from "./../../Img/logo.png";
 
 var imgStyle = {
-  minWidth: "128px", maxWidth: "128px"
+  minWidth: "128px",
+  maxWidth: "128px"
 };
 
-var flag=1;
-const MenuBar = (props) => {
+var flag = 1;
+const MenuBar = props => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   return (
@@ -32,7 +34,12 @@ const MenuBar = (props) => {
       <Col lg="3">
         <Media>
           <Media left>
-            <Media style={imgStyle} object src={Logo_img} alt="My PlaceHolder Picture" />
+            <Media
+              style={imgStyle}
+              object
+              src={Logo_img}
+              alt="My PlaceHolder Picture"
+            />
           </Media>
         </Media>
       </Col>
@@ -49,30 +56,29 @@ const MenuBar = (props) => {
             <NavItem>
               <NavLink href="">Sign-up</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="" >Log-in</NavLink>
-            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Log-in
+              </DropdownToggle>
+              <DropdownMenu right>
+                <Profile></Profile>
+                <DropdownItem>Account</DropdownItem>
+                <DropdownItem>Your Booking</DropdownItem>
+                <DropdownItem>Favorite List</DropdownItem>
+                <DropdownItem>Payment List</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Language
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>
-                  Vietnamese
-                </DropdownItem>
-                <DropdownItem>
-                  English
-                </DropdownItem>
-                <DropdownItem>
-                  Chinese
-                </DropdownItem>
-                <DropdownItem>
-                  German
-                </DropdownItem>
+                <DropdownItem>Vietnamese</DropdownItem>
+                <DropdownItem>English</DropdownItem>
+                <DropdownItem>Chinese</DropdownItem>
+                <DropdownItem>German</DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>
-                  Dafault
-                </DropdownItem>
+                <DropdownItem>Dafault</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
@@ -80,6 +86,6 @@ const MenuBar = (props) => {
       </Col>
     </Row>
   );
-}
+};
 
 export default MenuBar;
