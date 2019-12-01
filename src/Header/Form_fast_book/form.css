@@ -45,3 +45,12 @@
     left:200px
 
 }
+
+.btn_search{
+    background: red !important;
+    
+}
+
+.div_btn_search{
+    text-align: right;
+}

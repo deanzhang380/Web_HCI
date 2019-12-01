@@ -55,8 +55,11 @@ const Form_fast_book = (props) => {
         </InputGroupButtonDropdown>
         </div>
         
-      </FormGroup>
-      <Button>Submit</Button>
+      </FormGroup>{' '}
+      <div className="div_btn_search">
+      <Button className="btn_search">Search</Button>{' '}
+      </div>
+      
     </Form>
     <Button className="btn_random"> Random Place</Button>
     </div>

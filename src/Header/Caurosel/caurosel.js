@@ -81,7 +81,7 @@ const Slider_Show = (props) => {
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
-    <Form_fast_book ></Form_fast_book>
+    <Form_fast_book></Form_fast_book>
     </div>
   );
 }
