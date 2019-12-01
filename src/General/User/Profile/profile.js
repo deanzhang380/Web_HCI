@@ -6,7 +6,6 @@ import {
   ModalBody,
   ModalFooter,
   Input,
-  DropdownItem
 } from "reactstrap";
 import "./profile.css";
 import avatar_user from "./../../../Img/avatar_user.png";
@@ -19,23 +18,18 @@ const avatarUser = {
 
 const Profile = props => {
   const { className } = props;
-  const [modal, setModal] = useState(false);
-  const [unmountOnClose] = useState(true);
+  const [modal, setModal] = useState(true);
   const toggle = () => setModal(!modal);
-
+  const closeBtn = <button className="close" onClick={() => window.location.href = '/'}>&times;</button>;
   return (
     <div className="profileModal">
-      <DropdownItem>
-        <div onClick={toggle}> Profile </div>{" "}
-      </DropdownItem>
       <Modal
         isOpen={modal}
         toggle={toggle}
         className={className}
-        unmountOnClose={unmountOnClose}
         size="lg"
       >
-        <ModalHeader toggle={toggle}> <div className="nameUser">
+        <ModalHeader close={closeBtn}> <div className="nameUser">
           <h6> SELENA GOMEZ ' INFO </h6> </div></ModalHeader>{" "}
         <ModalBody>
           <div className="infoUser">
@@ -158,7 +152,7 @@ const Profile = props => {
           </div>{" "}
         </ModalBody>{" "}
         <ModalFooter>
-          <Button color="danger" onClick={toggle}>
+          <Button color="danger" onClick={() => window.location.href = '/'}>
             Save{" "}
           </Button>{" "}
         </ModalFooter>{" "}

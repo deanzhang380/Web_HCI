@@ -61,7 +61,7 @@ const MenuBar = props => {
                 Log-in
               </DropdownToggle>
               <DropdownMenu right>
-                <Profile></Profile>
+                <DropdownItem onClick={() => window.location.href = '/profile'}>Profile</DropdownItem>
                 <DropdownItem>Account</DropdownItem>
                 <DropdownItem>Your Booking</DropdownItem>
                 <DropdownItem>Favorite List</DropdownItem>

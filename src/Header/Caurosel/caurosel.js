@@ -7,7 +7,6 @@ import {
   CarouselCaption
 } from "reactstrap";
 import Form_fast_book from "./../Form_fast_book/form";
-import Profile from "./../../General/User/Profile/profile";
 import "./caurosel.css";
 import img1 from "./../../Img/img1.jpg";
 import img2 from "./../../Img/img2.jpg";
@@ -98,7 +97,6 @@ const Slider_Show = props => {
         />
       </Carousel>
       <Form_fast_book></Form_fast_book>
-      <Profile></Profile>
     </div>
   );
 };
