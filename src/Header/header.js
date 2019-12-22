@@ -17,7 +17,6 @@ const Header = () => {;
       <Row>
       <Col  >
         <Slider_Show className="div_relative">
-          
         </Slider_Show>
         {/* <Form_fast_book className="div_absolute">
           </Form_fast_book> */}

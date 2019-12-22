@@ -73,20 +73,17 @@ const Slider_Show = props => {
 
   return (
     <div>
-<<<<<<< HEAD
-    <Carousel className="carousel-style div_relative"
+    {/* <Carousel className="carousel-style div_relative"
       activeIndex={activeIndex}
       next={next}
       previous={previous}
     >
-      
       <CarouselIndicators className="caurousel-indi" items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
+    </Carousel> */}
     <Form_fast_book></Form_fast_book>
-=======
       <Carousel
         className="carousel-style div_relative"
         activeIndex={activeIndex}
@@ -113,7 +110,6 @@ const Slider_Show = props => {
       </Carousel>
       <Form_fast_book></Form_fast_book>
       <Profile></Profile>
->>>>>>> 0b22a33b1ba49ac8e5d113336cbcf311d1023395
     </div>
   );
 };

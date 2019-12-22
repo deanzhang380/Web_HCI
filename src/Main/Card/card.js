@@ -1,24 +1,30 @@
 import React from 'react';
 import {
-  Card, CardImg, CardText, CardBody, CardLink,
-  CardTitle, CardSubtitle
+  Card, CardText,CardLink,
+  CardTitle, CardSubtitle,Button,Media
 } from 'reactstrap';
+import img from './room_1.jpg' 
+import './card.css'
+var imgStyle = {
+  minWidth: "318px",
+  maxWidth: "180px"
+};
 
 const Card_info = (props) => {
   return (
-    <div>
-      <Card>
-        <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-        </CardBody>
-        <img width="100%" src="/assets/318x180.svg" alt="Card image cap" />
-        <CardBody>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <CardLink href="#">Card Link</CardLink>
-          <CardLink href="#">Another Link</CardLink>
-        </CardBody>
-      </Card>
+    <div className ="outside_card">
+        <Media style={imgStyle}
+              object
+              src={img}
+              alt="My PlaceHolder Picture">
+        </Media>
+        <div className="card_Title"> Card Title</div>
+        <div className="card_sub_Title"> Brand</div>
+        <div className="price">
+          <div className="origin-price">AED 32.00</div>
+          <div>AED 25.60</div>
+          <div className="sale-off">30% Off</div>
+        </div>
     </div>
   );
 };
