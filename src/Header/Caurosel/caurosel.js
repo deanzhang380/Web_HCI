@@ -72,6 +72,17 @@ const Slider_Show = props => {
 
   return (
     <div>
+    {/* <Carousel className="carousel-style div_relative"
+      activeIndex={activeIndex}
+      next={next}
+      previous={previous}
+    >
+      <CarouselIndicators className="caurousel-indi" items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+      {slides}
+      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+    </Carousel> */}
+    <Form_fast_book></Form_fast_book>
       <Carousel
         className="carousel-style div_relative"
         activeIndex={activeIndex}

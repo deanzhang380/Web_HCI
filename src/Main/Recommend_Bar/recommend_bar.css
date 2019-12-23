@@ -1,0 +1,22 @@
+.recombar_contrainer{
+    width: 80%;
+    height: 480px;
+    margin: 0px auto;
+}
+.link_Recommend{
+    margin-top: 10px;
+    text-align: left;
+    height: 15%;
+}
+
+.A_tag_Recommend{
+    margin-left: 30px;
+    font-size: 26px;
+    color: rgb(45, 165, 150)!important;
+    text-decoration: underline !important;
+}
+
+.recommend_Card_bar{
+    display: flex;
+    padding-left: 30px;
+}

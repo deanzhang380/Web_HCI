@@ -31,6 +31,7 @@ const Form_fast_book = (props) => {
             SEARCH
         </Label>
         </div>
+<<<<<<< HEAD
         <FormGroup >
           <Label for="where">Where</Label>
           <Input placeholder="Where" />
@@ -69,6 +70,33 @@ const Form_fast_book = (props) => {
         <Button>Submit</Button>
       </Form>
       <Button className="btn_random" onClick={() => window.location.href = '/random'}> Random</Button>
+=======
+      </FormGroup>
+      <FormGroup>
+        <Label>Guests</Label>
+        <div className="guests_input">
+        <Input />
+        <InputGroupButtonDropdown addonType="append" isOpen={dropdownOpen} toggle={toggleDropDown}>
+          <DropdownToggle caret>
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem header>Header</DropdownItem>
+            <DropdownItem disabled>Action</DropdownItem>
+            <DropdownItem>Another Action</DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem>Another Action</DropdownItem>
+          </DropdownMenu>
+        </InputGroupButtonDropdown>
+        </div>
+        
+      </FormGroup>{' '}
+      <div className="div_btn_search">
+      <Button className="btn_search">Search</Button>{' '}
+      </div>
+      
+    </Form>
+    <Button className="btn_random"> Random Place</Button>
+>>>>>>> master
     </div>
   );
 }
