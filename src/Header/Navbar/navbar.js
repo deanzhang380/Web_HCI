@@ -63,6 +63,7 @@ const MenuBar = props => {
               <DropdownMenu right>
                 <DropdownItem onClick={() => window.location.href = '/profile'}>Profile</DropdownItem>
                 <DropdownItem>Account</DropdownItem>
+                <DropdownItem>Your Schedure</DropdownItem>
                 <DropdownItem>Your Booking</DropdownItem>
                 <DropdownItem>Favorite List</DropdownItem>
                 <DropdownItem>Payment List</DropdownItem>

@@ -61,51 +61,56 @@ const Random = props => {
                             src={randomRoomImg.src}
                             alt={randomRoomImg.altText}
                         />
-                        <div className="roomInfo">
-                            <div className="roomInfoTitle">
-                                <label>ROOM INFO</label>
+                        <div className="body">
+                            <div className="roomInfo">
+                                <div className="roomInfoTitle">
+                                    <label>ROOM INFO</label>
+                                </div>
+                                <div>
+                                    <label>ROOM Title Book Here</label>
+                                </div>
+                                <div>
+                                    <label>Type Room</label>
+                                </div>
                             </div>
-                            <div>
-                                <label>ROOM Title Book Here</label>
-                            </div>
-                            <div>
-                                <label>Tyoe Room</label>
-                            </div>
-                        </div>
 
-                        <div className="share">
-                            <div className="titleShare">
-                                <label>SHARE NOW</label>
+                            <div className="share">
+                                <div className="infoShare">
+                                    <div className="titleShare">
+                                        <label>SHARE NOW</label>
+                                    </div>
+                                    <div className="linkShare">http//...xyz</div>
+                                    <button className="copyBtn">Copy</button>
+                                </div>
+                                <div className="iconShare">
+                                    <img
+                                        className="facebookImg"
+                                        src={facebookImg.src}
+                                        alt={facebookImg.altText}
+                                    />
+                                    <img
+                                        className="googlePlusImg"
+                                        src={googlePlusImg.src}
+                                        alt={googlePlusImg.altText}
+                                    />
+                                </div>
+
                             </div>
-                            <div className="linkShare">http//...xyz</div>
-                            <button>Copy Link</button>
-                            <img
-                                className="facebookImg"
-                                src={facebookImg.src}
-                                alt={facebookImg.altText}
-                            />
-                            <img
-                                className="googlePlusImg"
-                                src={googlePlusImg.src}
-                                alt={googlePlusImg.altText}
-                            />
-                        </div>
-                        <div className="ratingShow">
-                            <img
-                                className="starRating"
-                                src={starRatingImg.src}
-                                alt={starRatingImg.altText}
-                            />
-                            <div className="ratingNumber">
+
+                            <div className="ratingShow">
+                                <img
+                                    className="starRating"
+                                    src={starRatingImg.src}
+                                    alt={starRatingImg.altText}
+                                />
+
                                 <div className="ratingReal">
-                                    <label>4/</label>
+                                    4/5
+                                    </div>
+
+                                <div className="titleRating">
+                                    AVERAGE RATING
                                 </div>
-                                <div className="totalRating">
-                                    <label>5</label>
-                                </div>
-                            </div>
-                            <div className="">
-                                <label>AVERAGE RATING</label>
                             </div>
                         </div>
                         <div className="favoriteList">
@@ -117,17 +122,18 @@ const Random = props => {
                             <label className="addToList">ADD TO FAVORTITES</label>
                         </div>
                         <div className="prices">
-                            <div className="salePrice">PRICE 32.00</div>
+                            <div className="salePrice"><strike>PRICE 32.00  </strike></div>
                             <div className="realPrice">PRICE 25.60</div>
                             <div className="percentSale">30% Off</div>
                         </div>
+
                     </div>
                 </ModalBody>
                 <ModalFooter>
                     <Button color="danger" onClick={toggle}>
                         Book Now
           </Button>{" "}
-                    <Button color="primary" onClick={() => (window.location.href = "/")}>
+                    <Button color="info" className="randomAgain" onClick={() => (window.location.href = "/")}>
                         Random Again
           </Button>
                 </ModalFooter>
