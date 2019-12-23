@@ -31,14 +31,12 @@ const Form_fast_book = (props) => {
             SEARCH
         </Label>
         </div>
-<<<<<<< HEAD
         <FormGroup >
           <Label for="where">Where</Label>
           <Input placeholder="Where" />
           <div className="link">
             <Button color="link">Google map</Button>
           </div>
-
         </FormGroup>
         <FormGroup className="ci_co">
           <div>
@@ -70,9 +68,8 @@ const Form_fast_book = (props) => {
         <Button>Submit</Button>
       </Form>
       <Button className="btn_random" onClick={() => window.location.href = '/random'}> Random</Button>
-=======
-      </FormGroup>
-      <FormGroup>
+
+      {/* <FormGroup>
         <Label>Guests</Label>
         <div className="guests_input">
         <Input />
@@ -94,9 +91,9 @@ const Form_fast_book = (props) => {
       <Button className="btn_search">Search</Button>{' '}
       </div>
       
-    </Form>
+  
     <Button className="btn_random"> Random Place</Button>
->>>>>>> master
+ master */}
     </div>
   );
 }

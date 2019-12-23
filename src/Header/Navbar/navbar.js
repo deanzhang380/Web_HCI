@@ -22,7 +22,7 @@ import Logo_img from "./../../Img/logo.png";
 
 var imgStyle = {
   minWidth: "128px",
-  maxWidth: "128px"
+  maxWidth: "128px","background-color":"rgb(247,247,247)"
 };
 
 var flag = 1;
