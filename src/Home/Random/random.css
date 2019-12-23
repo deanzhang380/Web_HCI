@@ -1,0 +1,102 @@
+.resultContent {
+    border:1px solid black;
+    margin:0;
+    width: auto;
+}
+
+.randomRoomImg, .googlePlusImg, .facebookImg, .heartImg, .starRating{
+    width: fit-content;
+    height: fit-content;
+}
+
+.randomRoomImg {
+    width: min-content;
+    border-radius:5px;
+}
+
+.roomInfoTitle {
+    border-radius:2px;
+    margin-top: 2px;
+    background: black;
+    margin-left: 10px;
+    padding: 1px;
+    width: fit-content;
+    color:white;
+}
+
+.body {
+    display: flex;
+}
+
+.body > div {
+    margin-left: 10px;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.share {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    font-size: 15px;
+}
+
+.linkShare {
+    border:1px solid black;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.infoShare {
+    display: flex;
+}
+
+.iconShare {
+    margin-left: 120px;
+}
+
+.copyBtn {
+     border:1px solid black;
+    background: black;
+    color: white;
+     height: 30px;
+}
+
+.ratingShow {
+    display: flex;
+    margin-left: 5px;
+}
+
+.favoriteList {
+    margin-left:30%;
+    margin-bottom:10px;
+
+}
+
+.prices{
+    display: flex;
+}
+
+.prices >div {
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.percentSale {
+    border:1px solid black;
+}
+
+.titleRating {
+    margin-right: 1px;
+}
+
+.salePrice {
+    color: lightslategrey;
+}
+
+.randomAgain {
+    background:  #31D2B7;
+}
