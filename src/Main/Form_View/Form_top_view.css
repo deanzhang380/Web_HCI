@@ -1,0 +1,33 @@
+.form_tv{
+    width: 70%;
+    border:1px black solid;
+    height: 500px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    padding: 10px 20px;
+}
+.top_view_container{
+    
+}
+
+.border{
+    border:1px black solid;
+}
+
+.tv_sub_image{
+    width:10%;
+}
+
+.tv_main_image{
+    width:50%;
+}
+
+.tv_info{
+    width:40%;
+    display: block;
+}
+
+.sub_image{
+    margin-top: 20px;
+}
