@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import { Container, Row, Col,Media } from 'reactstrap';
 import "./footer.css"
 import img from './logo_dai.jpg'
+import logo1 from './../Img/facebook_icon.png'
 var imgStyle = {
     minWidth: "100%",
     maxWidth: "180px"
   };
-
+  var logoStyle = {
+    minWidth: "20px",
+    maxWidth: "180px",
+    margin:"0 30px 0 0"
+  };
 const Footer = (propos) => {;
   return (
     <div className="footer">
@@ -19,10 +24,25 @@ const Footer = (propos) => {;
               object
               src={img}
               alt="My PlaceHolder Picture">
-              <div>
-                  
-              </div>
+              
         </Media>
+        <div className="div_logo_footer">
+        <Media style={logoStyle}
+              object
+              src={logo1}
+              alt="My PlaceHolder Picture">
+        </Media>
+        <Media style={logoStyle}
+              object
+              src={logo1}
+              alt="My PlaceHolder Picture">
+        </Media>
+        <Media style={logoStyle}
+              object
+              src={logo1}
+              alt="My PlaceHolder Picture">
+        </Media>
+        </div>
                 </Col>
                 <Col xs="2">.col-3</Col>
                 <Col xs="2">.col-3</Col>

@@ -25,13 +25,25 @@ var imgStyle = {
   maxWidth: "128px","background-color":"rgb(247,247,247)"
 };
 
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+//     document.getElementById("navbar").style.padding = "30px 10px";
+//     // document.getElementById("logo").style.fontSize = "25px";
+//   } else {
+//     document.getElementById("navbar").style.padding = "80px 10px";
+//     //document.getElementById("logo").style.fontSize = "35px";
+//   }
+// }
+
 var flag = 1;
 const MenuBar = props => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   return (
     
-    <Row color="light" light expand="md">
+    <Row color="light" light expand="md" className="nb">
       <Col lg="3">
         <Media>
           <Media left>
@@ -80,7 +92,7 @@ const MenuBar = props => {
                 <DropdownItem>Chinese</DropdownItem>
                 <DropdownItem>German</DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>Dafault</DropdownItem>
+                <DropdownItem>Default</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
