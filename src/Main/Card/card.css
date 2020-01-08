@@ -29,8 +29,9 @@
     text-decoration: line-through;
 }
 .sale-off{
-    text-align: right;
-    margin-right: 10px;
+   
     border: 1px black solid;
-    margin-left: 80px;
+    margin-left: 70px;
+    width: 90px;
+    height: 30px;
 }

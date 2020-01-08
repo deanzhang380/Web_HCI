@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form,Media } from 'reactstrap';
+import { Container, Row, Col, Form,Media, Button } from 'reactstrap';
 import './Form_top_view.css'
 import img from './../../Img/hotelroom.jpg'
 var imgStyle = {
@@ -16,7 +16,7 @@ const Form_top_view = () => {;
   return (
   <div className="top_view_container">
     <Form className="form_tv">
-        <div className="border tv_sub_image">
+        <div className=" tv_sub_image">
             <Media className="sub_image" style={imgStyle}
               object
               src={img}
@@ -38,7 +38,7 @@ const Form_top_view = () => {;
               src={img}
               alt="My PlaceHolder Picture"></Media>
         </div>
-        <div className="border tv_main_image">
+        <div className=" tv_main_image">
             <Media className="sub_image" style={mainImgStyle}
               object
               src={img}
@@ -46,18 +46,42 @@ const Form_top_view = () => {;
 
             </Media>
         </div>
-        <div className="border tv_info">
-            <div>BRAND</div>
-            <div>Room Book Here</div>
-            <div>Add to Favorites</div>
-            <div>Nist, do fames, consequat,</div>
-            <div>Read More</div>
-            <div className="price">
+        <div className=" tv_info">
+            <div className="txt_left font-weight">BRAND</div>
+            <div className="txt_left size30 font-weight">Room Book Here</div>
+            <div className="txt_left font-weight size18">Add to Favorites</div>
+            <div className="txt_left font-weight size18">Nist, do fames, consequat,</div>
+            <div className="txt_left font-weight text_underline size14">Read More</div>
+            <div className="tv_price">
+            <div className="price margin_top_auto">
                 <div className="origin-price">AED 32.00</div>
-                <div>AED 25.60</div>
-                <div className="sale-off">30% Off</div>
+                <div className="size18">AED 25.60</div>
+                <div className="sale-off"><div>30% Off</div></div>
+               
             </div>
-            
+            </div>
+            <div className="txt_left font-weight size14">You can track the price of this product</div>
+            <div className="txt_left margin_top_bottom">
+              <Button className="btn_top_view">SHARE NOW</Button>
+              <Button className="btn_top_view">BOOK NOW </Button>
+            </div>
+            <div className="view_my_favourite_list txt_left font-weight text_underline margin_top_bottom">
+                 View My Favourite List
+            </div>
+            <div className="favorite_list_group txt_left">
+            <div>
+              <Button className="btn_group">Lorem </Button>
+              <Button className="btn_group">Lorem </Button>
+              <Button className="btn_group">Lorem </Button>
+              <Button className="btn_group">Lorem </Button>
+            </div>
+            <div>
+              <Button className="btn_group">Lorem </Button>
+              <Button className="btn_group">Lorem </Button>
+              <Button className="btn_group">Lorem </Button>
+              <Button className="btn_group">Lorem </Button>
+            </div>  
+            </div>
         </div>
     </Form>
   </div>

@@ -38,3 +38,6 @@
   top: 20px;
   left:20px
 }
+.carousel-control-next, .carousel-control-prev {
+width: 10% !important;
+}
