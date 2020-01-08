@@ -51,7 +51,8 @@ const Form_top_view = () => {;
             <div className="txt_left size30 font-weight">Room Book Here</div>
             <div className="txt_left font-weight size18">Add to Favorites</div>
             <div className="txt_left font-weight size18">Nist, do fames, consequat,</div>
-            <div className="txt_left font-weight text_underline size14">Read More</div>
+            <div className="txt_left "><a href="#" className="font-weight text_underline size14 color_black">Read More</a> </div>
+            
             <div className="tv_price">
             <div className="price margin_top_auto">
                 <div className="origin-price">AED 32.00</div>
@@ -65,8 +66,8 @@ const Form_top_view = () => {;
               <Button className="btn_top_view">SHARE NOW</Button>
               <Button className="btn_top_view">BOOK NOW </Button>
             </div>
-            <div className="view_my_favourite_list txt_left font-weight text_underline margin_top_bottom">
-                 View My Favourite List
+            <div className="view_my_favourite_list txt_left margin_top_bottom">
+                <a href="#" className="font-weight text_underline size18 color_black"> View My Favourite List</a>
             </div>
             <div className="favorite_list_group txt_left">
             <div>
