@@ -36,8 +36,9 @@ const Schedure = props => {
                         <div className="CalendarTitle">
                             CALENDAR
                         </div>
-                        <DateTime></DateTime>
-
+                        <div className="DateTimeSchedure">
+                            <DateTime></DateTime>
+                        </div>
                     </div>
 
                 </ModalBody>{" "}
