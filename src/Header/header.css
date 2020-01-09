@@ -29,4 +29,5 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     background: rgba(252, 252, 252, 0.8);
+    height: 80px;
 }

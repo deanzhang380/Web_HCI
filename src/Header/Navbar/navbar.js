@@ -18,13 +18,16 @@ import { Container, Row, Col } from "reactstrap";
 import "./navbar.css";
 import Profile from "./../../General/User/Profile/profile";
 import { Media } from "reactstrap";
-import Logo_img from "./../../Img/logo.png";
+import Logo_img from "./../../Img/logo_navbar.jpg";
 
 var imgStyle = {
-  minWidth: "128px",
-  maxWidth: "128px","background-color":"rgb(247,247,247)"
+  minWidth: "40%",
+  maxWidth: "20%","background-color":"rgb(247,247,247)",
+  
 };
-
+var text_left={
+  "text-align":"left"
+}
 // window.onscroll = function() {scrollFunction()};
 
 // function scrollFunction() {
@@ -44,7 +47,7 @@ const MenuBar = props => {
   return (
     
     <Row color="light" light expand="md" className="nb">
-      <Col lg="3">
+      <Col lg="3" style={text_left}>
         <Media>
           <Media left>
             <Media

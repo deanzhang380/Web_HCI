@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './recommend_bar.css'
 import Card from './../Card/card.js'
+import Gallery from './../../Custom_carousel/gallery'
 const RecomBar = () => {;
   return (
       <div className="recombar_contrainer">
@@ -10,12 +11,7 @@ const RecomBar = () => {;
                 Recommend for you
             </a>
         </div>
-        <div className="recommend_Card_bar">
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        </div>
+        <Gallery ></Gallery>
       </div>
   );
 }

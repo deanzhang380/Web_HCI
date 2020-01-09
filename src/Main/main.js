@@ -5,6 +5,7 @@ import Card_info from './Card/card.js'
 import RecomBar from './Recommend_Bar/recommend_bar.js'
 import Form_top_view from './Form_View/Form_top_view.js'
 import Footer from './../Footer/footer'
+import Gallery from './../Custom_carousel/gallery'
 const Main = () => {;
   return (
     <Container className="App-Container">
@@ -12,9 +13,10 @@ const Main = () => {;
         <RecomBar></RecomBar>
         </div>
          <div>
-           <Form_top_view>
-           </Form_top_view>
            <Footer></Footer>
+         </div>
+         <div>
+           
          </div>
 
     </Container>
