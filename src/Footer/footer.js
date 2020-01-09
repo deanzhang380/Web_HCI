@@ -32,7 +32,7 @@ const Footer = (propos) => {;
     <div className="footer">
         <div className="back_ground_color_247 height_5"></div>
         <div className="back_ground_color_232 height_80">
-            <Row className="Row_height">
+            <Row className="Row_height" style={{width:"100%",margin:"0 0 0 -15px"}}>
                 <Col sm="12" md={{ size: 10, offset: 1 }} className="display_flex">
                 <Col xs="2">
                 <Media style={imgStyle}
