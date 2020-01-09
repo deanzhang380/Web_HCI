@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import DateTime from "../dateTime"
+
 import {
     Button,
     Modal,
@@ -20,22 +22,24 @@ const Schedure = props => {
                 isOpen={modal}
                 toggle={toggle}
                 className={className}
-                size="lg"
-            >
+                size="lg" >
                 <ModalHeader close={closeBtn}> <div className="nameUser">
                     <h6> SELENA' SCHEDURE </h6> </div></ModalHeader>{" "}
                 <ModalBody>
                     <div className="Destination">
                         NEWYORK
                     </div>
-                    <div className="Date">
-                        <div className="startDate">
-                            START DATE
-                        </div>
-                        <div className="endDate">
-                            END DATE
-                        </div>
+                    <div className="linkGoogleMap">
+                        <a href="https://www.google.com/maps">GOOGLE-MAP</a>
                     </div>
+                    <div className="DateTime">
+                        <div className="CalendarTitle">
+                            CALENDAR
+                        </div>
+                        <DateTime></DateTime>
+
+                    </div>
+
                 </ModalBody>{" "}
                 <ModalFooter>
                     <Button color="danger" onClick={() => window.location.href = '/'}>

@@ -15,11 +15,10 @@
 }
 
 .roomInfoTitle {
-    border-radius:2px;
+    border-radius:5px;
     margin-top: 2px;
     background: black;
-    margin-left: 10px;
-    padding: 1px;
+    padding: 5px;
     width: fit-content;
     color:white;
 }

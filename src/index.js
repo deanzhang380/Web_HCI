@@ -15,7 +15,7 @@ const routing = (
             <Route path="/" component={App} />
             <Route path="/profile" component={Profile} />
             <Route path="/random" component={Random} />
-            <Route path="/schedure" component={Random} />
+            <Route path="/schedure" component={Schedure} />
         </div>
     </Router>
 )
