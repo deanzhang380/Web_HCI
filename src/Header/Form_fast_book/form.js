@@ -68,7 +68,6 @@ const Form_fast_book = (props) => {
         <Button>Submit</Button>
       </Form>
       <Button className="btn_random" onClick={() => window.location.href = '/random'}> Random</Button>
-<<<<<<< HEAD
 
       {/* <FormGroup>
         <Label>Guests</Label>
@@ -95,8 +94,6 @@ const Form_fast_book = (props) => {
   
     <Button className="btn_random"> Random Place</Button>
  master */}
-=======
->>>>>>> ranchi
     </div>
   );
 }

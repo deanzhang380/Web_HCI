@@ -44,16 +44,10 @@ var flag = 1;
 const MenuBar = props => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  return (
-<<<<<<< HEAD
-    
+  return ( 
     <Row color="light" light expand="md" className="nb">
       <Col lg="3" style={text_left}>
-=======
 
-    <Row color="light" light expand="md">
-      <Col lg="3">
->>>>>>> ranchi
         <Media>
           <Media left>
             <Media
