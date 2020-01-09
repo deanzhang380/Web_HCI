@@ -7,19 +7,21 @@ import Form_top_view from './Form_View/Form_top_view.js'
 import Footer from './../Footer/footer'
 import Gallery from './../Custom_carousel/gallery'
 import Form_book from './Form_Book_info/form_book'
+import TopSellers from './Top_Seller/topsell'
 const Main = () => {;
   return (
     <Container className="App-Container">
         <div className="">
+        
         <RecomBar></RecomBar>
         </div>
          <div>
-           <Footer></Footer>
+          <div className="size30 font-weight ">TOP VIEW</div>
+           <Form_top_view></Form_top_view>
          </div>
          <div>
-           <Form_book>
-             
-           </Form_book>
+           <TopSellers></TopSellers>
+           <TopSellers></TopSellers>
          </div>
 
     </Container>

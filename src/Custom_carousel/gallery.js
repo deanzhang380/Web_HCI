@@ -18,14 +18,14 @@ class Gallery extends React.Component {
   state = {
     currentIndex: 0,
     itemsInSlide: 1,
-    responsive: { 0: { items: 4 } },
+    responsive: { 0: { items: 4} },
     galleryItems: this.galleryItems(),
   }
  
   galleryItems() {
-    return Array(7)
+    return Array(8)
       .fill()
-      .map((item,i) => <Card></Card>)
+      .map((item,i) => <Card> </Card>)
   }
  
   slidePrevPage = () => {
@@ -69,6 +69,7 @@ class Gallery extends React.Component {
           onSlideChanged={this.handleOnSlideChange}
           onResized={this.handleOnSlideChange}
           buttonsDisabled={true}
+          dotsDisabled={true}
         />
         <CarouselControl
           direction="next"

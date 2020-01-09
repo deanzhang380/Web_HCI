@@ -1,6 +1,6 @@
 .form_book{
     width: 80%;
-    height: 1000px;
+    height: 1500px;
     margin: 10px auto;
     display: flex;
    
@@ -20,4 +20,10 @@
 
 .description{
     height: fit-content;
+}
+
+.form-check-input {
+    position: relative !important; 
+     margin-top: 8px !important ; 
+     margin-left: 10px !important; 
 }
