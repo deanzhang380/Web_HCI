@@ -30,7 +30,7 @@ const MenuBar = props => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   return (
-    
+
     <Row color="light" light expand="md">
       <Col lg="3">
         <Media>
@@ -64,7 +64,7 @@ const MenuBar = props => {
               <DropdownMenu right>
                 <DropdownItem onClick={() => window.location.href = '/profile'}>Profile</DropdownItem>
                 <DropdownItem>Account</DropdownItem>
-                <DropdownItem>Your Schedure</DropdownItem>
+                <DropdownItem onClick={() => window.location.href = '/schedure'}>Your Schedure</DropdownItem>
                 <DropdownItem>Your Booking</DropdownItem>
                 <DropdownItem>Favorite List</DropdownItem>
                 <DropdownItem>Payment List</DropdownItem>
