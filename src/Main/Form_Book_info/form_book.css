@@ -21,3 +21,25 @@
 .description{
     height: fit-content;
 }
+
+.Line {
+    stroke:rgb(0, 0, 0);stroke-width:7;
+}
+
+.titleContent{
+    margin-left: 90px;
+}
+
+.DateBook {
+    margin-left: 25%;
+    height:80px;
+}
+
+.guests_input{
+     margin-left: 25%;
+     width: 45%;
+}    
+
+._input{
+    height: 100px;
+}

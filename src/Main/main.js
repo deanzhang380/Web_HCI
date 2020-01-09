@@ -7,22 +7,23 @@ import Form_top_view from './Form_View/Form_top_view.js'
 import Footer from './../Footer/footer'
 import Gallery from './../Custom_carousel/gallery'
 import Form_book from './Form_Book_info/form_book'
-const Main = () => {;
+import Header from '../Header/header'
+const Main = () => {
+  ;
   return (
-    <Container className="App-Container">
+    <div className="Main">
+      <Header className="Main-header" />
+      <Container className="App-Container">
         <div className="">
-        <RecomBar></RecomBar>
+          <RecomBar></RecomBar>
+          <RecomBar></RecomBar>
+          <RecomBar></RecomBar>
         </div>
-         <div>
-           <Footer></Footer>
-         </div>
-         <div>
-           <Form_book>
-             
-           </Form_book>
-         </div>
-
-    </Container>
+        <div>
+          <Footer></Footer>
+        </div>
+      </Container>
+    </div>
   );
 }
 
