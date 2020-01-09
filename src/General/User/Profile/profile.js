@@ -22,13 +22,12 @@ const Profile = props => {
   const toggle = () => setModal(!modal);
   const closeBtn = <button className="close" onClick={() => window.location.href = '/'}>&times;</button>;
   return (
-    <div className="profileModal">
+    <div className="profileModal" >
       <Modal
         isOpen={modal}
         toggle={toggle}
         className={className}
-        size="lg"
-      >
+        style={{ maxWidth: '1000px', maxHeight: "1500px", width: '80%', maxHeight: '1000px', height: '1000px', margin: '10px auto' }}  >
         <ModalHeader close={closeBtn}> <div className="nameUser">
           <h6> SELENA GOMEZ ' INFO </h6> </div></ModalHeader>{" "}
         <ModalBody>
@@ -157,7 +156,7 @@ const Profile = props => {
           </Button>{" "}
         </ModalFooter>{" "}
       </Modal>{" "}
-    </div>
+    </div >
   );
 };
 
