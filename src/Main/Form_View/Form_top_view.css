@@ -1,7 +1,7 @@
 .form_tv{
-    width: 70%;
+    width: 65%;
     border:1px black solid;
-    height: 500px;
+    height: 470px;
     margin: 0 auto;
     background: white;
     display: flex;
@@ -24,10 +24,70 @@
 }
 
 .tv_info{
+    padding-left: 10px;
     width:40%;
     display: block;
+    margin-left: 10px;
 }
-
 .sub_image{
     margin-top: 20px;
+}
+
+.txt_left{
+    text-align: left;
+}
+
+.btn_top_view{
+    background-color: rgb(219,42,42) !important;
+    margin-right: 20px !important;
+    height: 50px;
+}
+
+.btn_group{
+    width: 85px;
+    height:40px;
+    margin: 5px 10px;
+    background-color: rgb(227,227,227) !important;
+    color: black !important;
+}
+
+.size30{
+    font-size: 30px;
+}
+
+.font-weight{
+    font-weight: 600;
+}
+
+.size18{
+    font-size: 18px;
+}
+
+.tv_price{
+    padding:10px;
+    height: 50px;
+}
+
+.margin_top_auto{
+    margin-top: auto;
+}
+
+.text_underline{
+    text-decoration: underline;
+}
+
+.size14{
+    font-size: 14px;
+}
+
+.size12{
+    font-size:12px;
+}
+
+.margin_top_bottom{
+    margin: 10px 0;
+}
+
+.color_black{
+    color: black;
 }

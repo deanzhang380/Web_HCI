@@ -37,7 +37,6 @@ const Form_fast_book = (props) => {
           <div className="link">
             <Button color="link">Google map</Button>
           </div>
-
         </FormGroup>
         <FormGroup className="ci_co">
           <div>
@@ -69,6 +68,32 @@ const Form_fast_book = (props) => {
         <Button>Submit</Button>
       </Form>
       <Button className="btn_random" onClick={() => window.location.href = '/random'}> Random</Button>
+
+      {/* <FormGroup>
+        <Label>Guests</Label>
+        <div className="guests_input">
+        <Input />
+        <InputGroupButtonDropdown addonType="append" isOpen={dropdownOpen} toggle={toggleDropDown}>
+          <DropdownToggle caret>
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem header>Header</DropdownItem>
+            <DropdownItem disabled>Action</DropdownItem>
+            <DropdownItem>Another Action</DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem>Another Action</DropdownItem>
+          </DropdownMenu>
+        </InputGroupButtonDropdown>
+        </div>
+        
+      </FormGroup>{' '}
+      <div className="div_btn_search">
+      <Button className="btn_search">Search</Button>{' '}
+      </div>
+      
+  
+    <Button className="btn_random"> Random Place</Button>
+ master */}
     </div>
   );
 }

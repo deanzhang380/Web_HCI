@@ -18,12 +18,27 @@ import { Container, Row, Col } from "reactstrap";
 import "./navbar.css";
 import Profile from "./../../General/User/Profile/profile";
 import { Media } from "reactstrap";
-import Logo_img from "./../../Img/logo.png";
+import Logo_img from "./../../Img/logo_navbar.jpg";
 
 var imgStyle = {
-  minWidth: "128px",
-  maxWidth: "128px"
+  minWidth: "40%",
+  maxWidth: "20%","background-color":"rgb(247,247,247)",
+  
 };
+var text_left={
+  "text-align":"left"
+}
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+//     document.getElementById("navbar").style.padding = "30px 10px";
+//     // document.getElementById("logo").style.fontSize = "25px";
+//   } else {
+//     document.getElementById("navbar").style.padding = "80px 10px";
+//     //document.getElementById("logo").style.fontSize = "35px";
+//   }
+// }
 
 var flag = 1;
 const MenuBar = props => {
@@ -31,8 +46,9 @@ const MenuBar = props => {
   const toggle = () => setIsOpen(!isOpen);
   return (
 
-    <Row color="light" light expand="md">
-      <Col lg="3">
+    
+    <Row color="light" light expand="md" className="nb">
+      <Col lg="3" style={text_left}>
         <Media>
           <Media left>
             <Media
@@ -80,7 +96,7 @@ const MenuBar = props => {
                 <DropdownItem>Chinese</DropdownItem>
                 <DropdownItem>German</DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>Dafault</DropdownItem>
+                <DropdownItem>Default</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>

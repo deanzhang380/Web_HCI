@@ -1,0 +1,23 @@
+.form_book{
+    width: 80%;
+    height: 1000px;
+    margin: 10px auto;
+    display: flex;
+   
+}
+.form_book_info{
+    width: 50%;
+    height: 100%;
+    border: solid black 1px;
+}
+
+.form_book_payment{
+    width: 50%;
+    height: 100%;
+    border: solid black 1px;
+
+}
+
+.description{
+    height: fit-content;
+}

@@ -18,7 +18,10 @@
 .carousel-style{
   
 }
-
+.control_style{
+  position:relative !important;
+  margin: 0px 10px;
+}
 .carousel-control-next-icon, .carousel-control-prev-icon {
   width: 40px !important;
   height: 40px !important;
@@ -37,4 +40,11 @@
   position: absolute;
   top: 20px;
   left:20px
+}
+.carousel-control-next, .carousel-control-prev {
+width: 10% !important;
+}
+
+.carousel-caption {
+padding: 0 !important;
 }

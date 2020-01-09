@@ -10,7 +10,7 @@ const Header = () => {;
     <Container className="App-Container">
       <Row>
         <Col>
-        <MenuBar className="">
+        <MenuBar className="nb">
         </MenuBar>
         </Col>
       </Row>
