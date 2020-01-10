@@ -36,8 +36,8 @@ const Schedure = props => {
                         <div className="CalendarTitle">
                             CALENDAR
                         </div>
-                        <div className="DateTimeSchedure">
-                            <DateTime></DateTime>
+                        <div className="DateTimeSchedure" style={{textAlign:"center"}}>
+                            <DateTime ></DateTime>
                         </div>
                     </div>
 

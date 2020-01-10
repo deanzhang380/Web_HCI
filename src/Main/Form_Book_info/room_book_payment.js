@@ -11,7 +11,7 @@ const Form_book_payment = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropDown = () => setDropdownOpen(!dropdownOpen);
   return (
-    <div style={{ width: "80%", margin: "20px auto" }}>
+    <div style={{ width: "80%", margin: "50px auto" }}>
           <div style={{ margin: "10px 0 0 10px" }}>
             <div className="price margin_top_auto" style={{ width: "fit-content", margin: "20px auto" }}>
               <div className="origin-price">AED 32.00</div>
@@ -28,7 +28,10 @@ const Form_book_payment = () => {
               <DateTime></DateTime>
             </div>
             <div className="titleContent">GUEST *</div>
-            <ComboBox ></ComboBox>
+            <div style={{width:"90%",margin:"0px auto"}}>
+              <ComboBox ></ComboBox>
+            </div>
+            
             <div style={{ margin: "0px auto", width: "fit-content" }}>
               <div className="PaymentMethod">
                 <FormGroup check>
@@ -62,11 +65,11 @@ const Form_book_payment = () => {
               <div style={{ textAlign: "right" }}>
                 <div className="RoomRentalMethodRow1">
                   <div className="Share">
-                    <label>SHARED</label>
+                    <label className="font-weight size22">SHARED</label>
                   </div>
                   <div className="Day-Left">
                     <div className="DaysLeftTitle">
-                      &ensp;<label>DAYS-LEFT:</label>
+                      &ensp;<label className="font-weight size22">DAYS-LEFT:</label>
                     </div>
                     <div className="DaysLeftNumber">
                       &ensp;<label>10 DAYS</label>
@@ -75,7 +78,7 @@ const Form_book_payment = () => {
                 </div>
                 <div className="RoomRentalMethodRow2">
                   <div className="Share">
-                    <label>NOT SHARED YET</label>
+                    <label className="font-weight size22">NOT SHARED YET</label>
                   </div>
                   <div className="Link">
                     <div className="linkShare">http//...xyz</div>
@@ -89,7 +92,10 @@ const Form_book_payment = () => {
               </div>
             </div>
             <div className="titleContent" style={{ fontSize: "20px", fontWeight: "600" }}>ACCOMPANIED SERVICE *</div>
-            <ComboBox ></ComboBox>
+            <div style={{width:"90%",margin:"0px auto"}}>
+              <ComboBox ></ComboBox>
+            </div>
+            
             <div style={{ width: "fit-content", margin: "20px auto" }}>
               <Button className="SaveButton" color="danger" >
                 BOOK NOW

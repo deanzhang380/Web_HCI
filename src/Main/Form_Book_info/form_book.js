@@ -8,6 +8,7 @@ import googlePlusImg from "../../Img/Google Plus.png"
 import facebookImg from "../../Img/Facebook.png"
 import Form_book_payment from './room_book_payment'
 import Form_book_info from './room_book_info'
+import Form_book_method_payment from './form_book_method_payment'
 const Form_book = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropDown = () => setDropdownOpen(!dropdownOpen);
@@ -15,7 +16,8 @@ const Form_book = () => {
     <div className="form_book">
       <Form_book_info></Form_book_info>
       <Form className="form_book_payment">
-        <Form_book_payment></Form_book_payment>
+        {/* <Form_book_payment></Form_book_payment> */}
+        <Form_book_method_payment></Form_book_method_payment>
       </Form>
     </div>
   );

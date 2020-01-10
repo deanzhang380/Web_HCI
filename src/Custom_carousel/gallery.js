@@ -17,7 +17,7 @@ import {
 class Gallery extends React.Component {
   state = {
     currentIndex: 0,
-    itemsInSlide: 1,
+    itemsInSlide: 0,
     responsive: { 0: { items: 4} },
     galleryItems: this.galleryItems(),
   }

@@ -1,8 +1,7 @@
 .outside_card{
-    width: 320px;
+    width: fit-content;
     height: 350px;
-    margin-right: 10px;
-    margin-left: 30px;
+    margin:0px auto;
     /* border: 1px black solid; */
 }
 
