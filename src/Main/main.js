@@ -9,6 +9,7 @@ import Gallery from './../Custom_carousel/gallery'
 import Form_book from './Form_Book_info/form_book'
 import TopSellers from './Top_Seller/topsell'
 import Reviews from './../Main/Reviews/reviews'
+import PaymentComponent from './AddPayment/payment'
 const Main = () => {;
   return (
     <Container className="App-Container">
@@ -24,7 +25,7 @@ const Main = () => {;
            <TopSellers></TopSellers>
          </div>
           <div>
-            
+            {/* <PaymentComponent></PaymentComponent> */}
           </div>
     </Container>
   );
