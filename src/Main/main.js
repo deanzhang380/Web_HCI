@@ -8,6 +8,7 @@ import Footer from './../Footer/footer'
 import Gallery from './../Custom_carousel/gallery'
 import Form_book from './Form_Book_info/form_book'
 import TopSellers from './Top_Seller/topsell'
+import Reviews from './../Main/Reviews/reviews'
 const Main = () => {;
   return (
     <Container className="App-Container">
@@ -23,7 +24,9 @@ const Main = () => {;
            <TopSellers></TopSellers>
            <TopSellers></TopSellers>
          </div>
-
+          <div>
+            <Reviews></Reviews>
+          </div>
     </Container>
   );
 }

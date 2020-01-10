@@ -77,8 +77,7 @@ class Gallery extends React.Component {
           onClickHandler={this.slideNextPage}
           className="control_style"
         />
-         {/* <button onClick={this.slidePrevPage}>Prev Page</button>
-        <button onClick={this.slideNextPage}>Next Page</button> */}
+        
 
       </div>
     )
