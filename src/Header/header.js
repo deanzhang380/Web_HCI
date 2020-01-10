@@ -5,31 +5,32 @@ import Form_fast_book from './Form_fast_book/form'
 import { Container, Row, Col } from 'reactstrap';
 import Slider_Show from './Caurosel/caurosel.js'
 import './header.css'
-const Header = () => {;
+const Header = () => {
+  ;
   return (
     <Container className="App-Container">
       <Row>
         <Col>
-        <MenuBar className="nb">
-        </MenuBar>
+          <MenuBar className="nb">
+          </MenuBar>
         </Col>
       </Row>
       <Row>
-      <Col  >
-        <Slider_Show className="div_relative">
-        </Slider_Show>
-        {/* <Form_fast_book className="div_absolute">
+        <Col  >
+          <Slider_Show className="div_relative">
+          </Slider_Show>
+          {/* <Form_fast_book className="div_absolute">
           </Form_fast_book> */}
         </Col>
       </Row>
       <Row>
-        <Col style={{textAlign:"center"}}>
+        <Col style={{ textAlign: "center" }}>
           <Tagbar></Tagbar>
         </Col>
       </Row>
-      
+
     </Container>
-   
+
   );
 }
 

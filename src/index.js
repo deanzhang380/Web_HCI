@@ -7,7 +7,7 @@ import Profile from './General/User/Profile/profile';
 import Random from './Home/Random/random';
 import Schedure from './General/User/Schedure/schedure';
 import HomePage from './Page/HomePage'
-import Room from './General/Rooms/room'
+import Room from './Page/room'
 import Payment from './General/Rooms/payMent/pay_ment'
 import Accept from './General/Rooms/Accept/accept'
 import Transaction from './General/Rooms/SucessfulTransaction/transaction'
@@ -40,10 +40,11 @@ const routing = (
                 <Route path="/home/random" component={Random} />
                 <Route path="/home/schedure" component={Schedure} />
                 <Route path="/rooms" component={Room} />
-                <Route path="/rooms/payment" component={Payment} />
-                <Route path="/rooms/accept" component={Accept} />
-                <Route path="/rooms/confirm" component={Confirm} />
-                <Route path="/rooms/transaction" component={Transaction} />
+                <Route path="/rooms_book/payment" component={Payment} />
+                <Route path="/rooms_book/accept" component={Accept} />
+                <Route path="/rooms_book/confirm" component={Confirm} />
+                <Route path="/rooms_book/transaction" component={Transaction} />
+
                 <Route path="/rooms_book" component={Room_book} />
             </Desktop>
             <Mobile>

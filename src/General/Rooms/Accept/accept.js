@@ -14,7 +14,7 @@ const Accept = props => {
     const { className } = props;
     const [modal, setModal] = useState(true);
     const toggle = () => setModal(!modal);
-    const closeBtn = <button className="close" onClick={() => window.location.href = '/rooms'}>&times;</button>;
+    const closeBtn = <button className="close" onClick={() => window.location.href = '/rooms_book'}>&times;</button>;
     return (
         <div className="AcceptModal">
             <Modal
@@ -31,9 +31,9 @@ const Accept = props => {
                             <div className="step3">STEP3</div>
                         </div>
                         <div className="PaymentTitle">
-                            <div className="AddPaymentTitle">ADD PAYMENT</div>
-                            <div className="AcceptTitle">ACCEPT RULES AND TERMS</div>
-                            <div className="ConfirmTitle">CONFIRM AND PAY</div>
+                            <div className="AddTitle">ADD PAYMENT</div>
+                            <div className="AcceptRulesTitle">ACCEPT RULES AND TERMS</div>
+                            <div className="ConfirmRulesTitle">CONFIRM AND PAY</div>
                         </div>
                     </div>
                     <div className="Rules">
@@ -68,10 +68,10 @@ const Accept = props => {
                 </ModalBody>{" "}
 
                 <div className="AddAcceptBtn">
-                    <Button className="AcceptBtn" color="danger" onClick={() => window.location.href = '/rooms'}>
+                    <Button className="AcceptBtn" color="danger" onClick={() => window.location.href = '/rooms_book/confirm'}>
                         ACCEPT{" "}
                     </Button>{" "}
-                    <Button className="CancelAcceptBtn" color="primary" onClick={() => window.location.href = '/rooms'}>
+                    <Button className="CancelAcceptBtn" color="primary" onClick={() => window.location.href = '/rooms_book'}>
                         CANCEL{" "}
                     </Button>{" "}
                 </div>

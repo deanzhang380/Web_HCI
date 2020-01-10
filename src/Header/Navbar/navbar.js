@@ -18,7 +18,7 @@ import { Container, Row, Col } from "reactstrap";
 import "./navbar.css";
 import Profile from "./../../General/User/Profile/profile";
 import { Media } from "reactstrap";
-import Logo_img from "./../../Img/logo_navbar.png";
+import Logo_img from "./../../Img/logo_navbar.jpg";
 
 var imgStyle = {
   minWidth: "53%",
@@ -46,33 +46,34 @@ const MenuBar = props => {
   return (
     <Row color="light" light expand="md" className="nb" >
       <Col lg="3" style={text_left}>
-
-        <Media>
-          <Media left>
-            <Media
-              style={imgStyle}
-              object
-              src={Logo_img}
-              alt="My PlaceHolder Picture"
-            />
+        <a href="/home">
+          <Media>
+            <Media left>
+              <Media
+                style={imgStyle}
+                object
+                src={Logo_img}
+                alt="My PlaceHolder Picture"
+              />
+            </Media>
           </Media>
-        </Media>
+        </a>
       </Col>
       <Col lg="9">
         <Navbar className="font-style float-right" light expand="md">
           <Nav className="mr-auto" navbar>
-            <NavLink href="">Home</NavLink>
+            <NavLink href="/home" style={{ color: "black", fontWeight: "400" }}>Home</NavLink>
             <NavItem>
-              <NavLink href="">Booking</NavLink>
+              <NavLink href="" style={{ color: "black", fontWeight: "400" }}>Booking</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Help</NavLink>
+              <NavLink href="" style={{ color: "black", fontWeight: "400" }}>Help</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Sign-up</NavLink>
+              <NavLink href="" style={{ color: "black", fontWeight: "400" }}>Sign-up</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
+              <DropdownToggle nav caret style={{ color: "black", fontWeight: "400" }}>
                 Log-in
               </DropdownToggle>
               <DropdownMenu right>
@@ -85,7 +86,7 @@ const MenuBar = props => {
               </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
+              <DropdownToggle nav caret style={{ color: "black", fontWeight: "400" }}>
                 Language
               </DropdownToggle>
               <DropdownMenu right>
@@ -100,7 +101,7 @@ const MenuBar = props => {
           </Nav>
         </Navbar>
       </Col>
-    </Row>
+    </Row >
   );
 };
 

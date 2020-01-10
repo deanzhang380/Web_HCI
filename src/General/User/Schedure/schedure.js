@@ -15,7 +15,7 @@ const Schedure = props => {
     const { className } = props;
     const [modal, setModal] = useState(true);
     const toggle = () => setModal(!modal);
-    const closeBtn = <button className="close" onClick={() => window.location.href = '/'}>&times;</button>;
+    const closeBtn = <button className="close" onClick={() => window.location.href = '/home'}>&times;</button>;
     return (
         <div className="schedureModal">
             <Modal
@@ -26,8 +26,20 @@ const Schedure = props => {
                 <ModalHeader close={closeBtn}> <div className="nameUser">
                     <h6> SELENA' SCHEDURE </h6> </div></ModalHeader>{" "}
                 <ModalBody>
+                    <div className="PlacetTile">
+                        DESTINATION
+                    </div>
                     <div className="Destination">
-                        NEWYORK
+                        <div class="form-group">
+                            <Input style={{ height: "60px" }}
+                                className="destination"
+                                type="textarea"
+                                placeholder="NewYork city, American"
+                                rows={1}
+                                required
+                                maxlength="64"
+                            />
+                        </div>{" "}
                     </div>
                     <div className="linkGoogleMap">
                         <a href="https://www.google.com/maps">GOOGLE-MAP</a>
@@ -36,14 +48,14 @@ const Schedure = props => {
                         <div className="CalendarTitle">
                             CALENDAR
                         </div>
-                        <div className="DateTimeSchedure" style={{textAlign:"center"}}>
+                        <div className="DateTimeSchedure" style={{ margin: "20px auto 0px", textAlign: "left" }}>
                             <DateTime ></DateTime>
                         </div>
                     </div>
 
                 </ModalBody>{" "}
                 <ModalFooter>
-                    <Button color="danger" onClick={() => window.location.href = '/'}>
+                    <Button color="danger" onClick={() => window.location.href = '/home'}>
                         Save{" "}
                     </Button>{" "}
                 </ModalFooter>{" "}

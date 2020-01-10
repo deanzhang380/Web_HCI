@@ -20,7 +20,7 @@ const Profile = props => {
   const { className } = props;
   const [modal, setModal] = useState(true);
   const toggle = () => setModal(!modal);
-  const closeBtn = <button className="close" onClick={() => window.location.href = '/'}>&times;</button>;
+  const closeBtn = <button className="close" onClick={() => window.location.href = '/home'}>&times;</button>;
   return (
     <div className="profileModal" >
       <Modal
@@ -151,7 +151,7 @@ const Profile = props => {
           </div>{" "}
         </ModalBody>{" "}
         <ModalFooter>
-          <Button color="danger" onClick={() => window.location.href = '/'}>
+          <Button color="danger" onClick={() => window.location.href = '/home'}>
             Save{" "}
           </Button>{" "}
         </ModalFooter>{" "}

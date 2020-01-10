@@ -14,18 +14,14 @@ import img3 from "./../../Img/img3.jpg";
 const items = [
   {
     src: img1,
-    altText: "Slide 1",
-    caption: "Slide 1"
+
   },
   {
     src: img2,
-    altText: "Slide 2",
-    caption: "Slide 2"
+
   },
   {
     src: img3,
-    altText: "Slide 3",
-    caption: "Slide 3"
   }
 ];
 var imgStyle = {
@@ -61,10 +57,8 @@ const Slider_Show = props => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img width={2000} height={700} src={item.src} alt={item.altText} />
+        <img width={2000} height={870} src={item.src} alt={item.altText} />
         <CarouselCaption
-          captionText={item.caption}
-          captionHeader={item.caption}
         />
       </CarouselItem>
     );
@@ -72,7 +66,7 @@ const Slider_Show = props => {
 
   return (
     <div>
-    {/* <Carousel className="carousel-style div_relative"
+      {/* <Carousel className="carousel-style div_relative"
       activeIndex={activeIndex}
       next={next}
       previous={previous}
@@ -82,7 +76,7 @@ const Slider_Show = props => {
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel> */}
-    <Form_fast_book></Form_fast_book>
+      <Form_fast_book></Form_fast_book>
       <Carousel
         className="carousel-style div_relative"
         activeIndex={activeIndex}

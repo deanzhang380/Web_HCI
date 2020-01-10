@@ -65,7 +65,7 @@ const Confirm = props => {
                 </ModalBody>{" "}
 
                 <div className="AddAcceptBtn">
-                    <Button className="AcceptBtn" color="info" onClick={() => window.location.href = '/rooms'}>
+                    <Button className="AcceptBtn" color="info" onClick={() => window.location.href = '/rooms_book/transaction'}>
                         CONFIRM{" "}
                     </Button>{" "}
                 </div>

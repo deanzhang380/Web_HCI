@@ -26,15 +26,15 @@
   padding-left: 40px;
 }
 
-.AddPaymentTitle {
+.AddTitle {
      background-color: rgb(0, 0, 0);
 }
 
-.AcceptTitle {
+.AcceptRulesTitle {
     background-color: rgb(255, 0, 0);
 }
 
-.ConfirmTitle {
+.ConfirmRulesTitle {
      background-color: rgb(0, 0, 0);
 }
 

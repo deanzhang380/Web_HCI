@@ -11,6 +11,8 @@
 .drop_down_toggle{
     width: 150px;
     font-size: 20px !important;
+  background: rgb(255, 255, 255) !important;
+  color: black !important ;
 }
 
 .btn-seeall{
@@ -18,3 +20,4 @@
     font-size: 25px !important;
     color: black !important;
 }
+
