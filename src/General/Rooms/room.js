@@ -16,7 +16,7 @@ import {
 } from "reactstrap";
 import gridImage1 from "../../Img/Grid5.png"
 import gridImage2 from "../../Img/Grid1.png"
-import logoImage from "../../Img/logo_navbar.jpg"
+import logoImage from "../../Img/logo_navbar.png"
 import Form_book from '../../Main/Form_Book_info/form_book'
 import RecomBar from '../../Main/Recommend_Bar/recommend_bar'
 import Footer from '../../Footer/footer'

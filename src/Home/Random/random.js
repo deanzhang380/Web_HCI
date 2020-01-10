@@ -130,7 +130,7 @@ const Random = props => {
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="danger" onClick={toggle}>
+                    <Button color="danger" href="/rooms">
                         Book Now
           </Button>{" "}
                     <Button color="info" className="randomAgain" onClick={() => (window.location.href = "/")}>

@@ -18,12 +18,11 @@ import { Container, Row, Col } from "reactstrap";
 import "./navbar.css";
 import Profile from "./../../General/User/Profile/profile";
 import { Media } from "reactstrap";
-import Logo_img from "./../../Img/logo_navbar.jpg";
+import Logo_img from "./../../Img/logo_navbar.png";
 
 var imgStyle = {
   minWidth: "53%",
   maxWidth: "20%", "background-color": "rgb(247,247,247)",
-
 };
 var text_left = {
   "text-align": "left"
@@ -77,9 +76,9 @@ const MenuBar = props => {
                 Log-in
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem onClick={() => window.location.href = 'home/profile'}>Profile</DropdownItem>
+                <DropdownItem onClick={() => window.location.href = '/home/profile'}>Profile</DropdownItem>
                 <DropdownItem>Account</DropdownItem>
-                <DropdownItem onClick={() => window.location.href = 'home/schedure'}>Your Schedure</DropdownItem>
+                <DropdownItem onClick={() => window.location.href = '/home/schedure'}>Your Schedure</DropdownItem>
                 <DropdownItem>Your Booking</DropdownItem>
                 <DropdownItem>Favorite List</DropdownItem>
                 <DropdownItem>Payment List</DropdownItem>
