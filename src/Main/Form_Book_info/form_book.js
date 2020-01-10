@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { DropdownItem, DropdownMenu, DropdownToggle, InputGroupButtonDropdown, Input, Label, FormGroup, Container, Row, Col, Form, Media, Button } from 'reactstrap';
 import './form_book.css'
 import DateTime from "../../General/User/dateTime"
-
+import googlePlusImg from "../../Img/Google Plus.png"
+import facebookImg from "../../Img/Facebook.png"
 
 const Form_book = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -45,7 +46,80 @@ We'll stop to take in stunning vistas of Himalayan peaks and pass through rhodod
         </div>
         <div className="titleContent">GUEST *</div>
         <FormGroup>
-          <div className="guests_input">
+          <div className="Guests_input">
+            <Input className="_input" />
+            <InputGroupButtonDropdown addonType="append" isOpen={dropdownOpen} toggle={toggleDropDown}>
+              <DropdownToggle caret>
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem header>Header</DropdownItem>
+                <DropdownItem disabled>Action</DropdownItem>
+                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Another Action</DropdownItem>
+              </DropdownMenu>
+            </InputGroupButtonDropdown>
+          </div>
+        </FormGroup >
+        <div className="PaymentMethod">
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              DEPOSIT
+          </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio1" />{' '}
+              PAY OFF
+          </Label>
+          </FormGroup>
+        </div>
+        <div className="DepositePercent">
+          <div className="Deposite1">
+            10%
+        </div>
+          <div className="Deposite2">
+            50%
+        </div>
+          <div className="Deposite3">
+            70%
+        </div>
+        </div>
+        <div className="titleContent">ROOM RENTAL METHOD *</div>
+        <div className="RoomRentalMethod">
+          <div style={{ textAlign: "right" }}>
+            <div className="RoomRentalMethodRow1">
+              <div className="Share">
+                <label>SHARED</label>
+              </div>
+              <div className="Day-Left">
+                <div className="DaysLeftTitle">
+                  &ensp;<label>DAYS-LEFT:</label>
+                </div>
+                <div className="DaysLeftNumber">
+                  &ensp;<label>10 DAYS</label>
+                </div>
+              </div>
+            </div>
+            <div className="RoomRentalMethodRow2">
+              <div className="Share">
+                <label>NOT SHARED YET</label>
+              </div>
+              <div className="Link">
+                <div className="linkShare">http//...xyz</div>
+                <button className="copyBtn">Copy</button>
+              </div>
+            </div>
+          </div>
+          <div className="iconShare">
+            <img className="facebookImg" src={facebookImg} />
+            <img className="googlePlusImg" src={googlePlusImg} />
+          </div>
+        </div>
+        <div className="titleContent">ACCOMPANIED SERVICE *</div>
+        <FormGroup>
+          <div className="AccompaniedService">
             <Input className="_input" />
             <InputGroupButtonDropdown addonType="append" isOpen={dropdownOpen} toggle={toggleDropDown}>
               <DropdownToggle caret>
@@ -60,15 +134,11 @@ We'll stop to take in stunning vistas of Himalayan peaks and pass through rhodod
             </InputGroupButtonDropdown>
           </div>
         </FormGroup>
-        <label>
-          <input
-            type="radio"
-            value="small"
-            checked={this.state.size === "small"}
-          />
-          Small
-          </label>
+        <Button className="SaveButton" color="danger" >
+          BOOK NOW
+      </Button>
       </Form>
+
     </div>
   );
 }

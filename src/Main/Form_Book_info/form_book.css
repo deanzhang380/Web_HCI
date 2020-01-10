@@ -1,17 +1,17 @@
-.form_book{
+.form_book {
     width: 80%;
     height: 1000px;
     margin: 10px auto;
     display: flex;
    
 }
-.form_book_info{
+.form_book_info {
     width: 50%;
     height: 100%;
     border: solid black 1px;
 }
 
-.form_book_payment{
+.form_book_payment {
     width: 50%;
     height: 100%;
     border: solid black 1px;
@@ -35,11 +35,83 @@
     height:80px;
 }
 
-.guests_input{
+.Guests_input {
      margin-left: 25%;
      width: 45%;
 }    
 
-._input{
+._input {
     height: 100px;
 }
+
+.PaymentMethod {
+    margin-left: 25%;
+    display: flex;
+}
+
+.PaymentMethod >div {
+    margin: 10px;
+    padding: 20px;
+}
+
+.DepositePercent {
+    display: flex;
+    margin-left: 25%;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.DepositePercent >div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border:1px solid black; 
+}
+
+.Deposite2 {
+    background-color: black;
+    color: white;
+}
+
+.AccompaniedService {
+    margin-top: 20px;
+     margin-left: 25%;
+     width: 50%;
+} 
+
+.RoomRentalMethod {
+      margin-top: 20px;
+      margin-left: 25%;
+      width: 50%;
+      border: 1px solid black;
+      margin-bottom: 20px;
+      text-align: right;
+}
+
+.Day-Left {
+    display: flex;
+}
+
+.RoomRentalMethodRow1{
+    display: flex;
+}
+
+.RoomRentalMethodRow2{
+    display: flex;
+}
+
+.Link {
+    display: flex;
+}
+
+.iconShare {
+    display: flex;
+    padding: 10px;
+}
+
+.SaveButton {
+    margin-left: 45%;
+    background-color: darkred;
+}
+
