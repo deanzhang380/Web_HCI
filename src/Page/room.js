@@ -59,13 +59,13 @@ function Room() {
                 </div>
             </div>
             <div className="RoomBookForm">
-            <div className="form_book">
-                 <Form_book_info></Form_book_info>
-                 <Form className="form_book_payment">
-        <Form_book_payment></Form_book_payment>
-                {/* <Form_book_method_payment></Form_book_method_payment> */}
-                </Form>
-    </div>  
+                <div className="form_book">
+                    <Form_book_info></Form_book_info>
+                    <Form className="form_book_payment">
+                        <Form_book_payment></Form_book_payment>
+                        {/* <Form_book_method_payment></Form_book_method_payment> */}
+                    </Form>
+                </div>
             </div>
             <div className="Review">
                 <Reviews></Reviews>

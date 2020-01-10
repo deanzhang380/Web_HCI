@@ -1,11 +1,6 @@
 .nameUser {
     margin: auto;
 }
-.Destination {
-    border: 1px solid black;
-    padding: 10px;
-    font-size: x-large;
-}
 
 .modal-title {
     width: 100%;
@@ -15,8 +10,7 @@
 
 .linkGoogleMap {
     text-align: right;
-    font-size: large;
-    padding: 10px;
+    font-size: small;
 }
 
 .Date {
@@ -34,11 +28,13 @@
 }
 
 .CalendarTitle {
-     font-size: x-large;
-     text-align: center;
-     border: 1px solid black;
+      font-size: large;
+     text-align: left;
      margin-bottom: 10px;
 }
-.DateTime{
-    margin-bottom: 300px;
+
+.PlacetTile{
+    font-size: larger;
+    margin-bottom: 20px;
 }
+

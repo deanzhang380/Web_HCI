@@ -61,10 +61,10 @@ const Payment = props => {
                 </ModalBody>{" "}
 
                 <div className="AddPaymentBtn">
-                    <Button className="AddBtn" color="danger" onClick={() => window.location.href = '/rooms'}>
+                    <Button className="AddBtn" color="danger" onClick={() => window.location.href = '/rooms_book'}>
                         ADD PAYMENT{" "}
                     </Button>{" "}
-                    <Button className="CancelBtn" color="primary" onClick={() => window.location.href = '/rooms'}>
+                    <Button className="CancelBtn" color="primary" onClick={() => window.location.href = '/rooms_book'}>
                         CANCEL{" "}
                     </Button>{" "}
                 </div>

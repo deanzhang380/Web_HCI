@@ -1,10 +1,11 @@
 .outside{
-    border: 1px black solid;
     text-align: left;
     width: 400px;
     height: max-content;
     padding: 30px;
     background: white;
+    box-shadow: 5px 5px 4px rgba(22, 19, 19, 0.404);
+    border-radius: 5px;
 }
 
 .Title{
@@ -26,13 +27,15 @@
 }
 
 .btn_random{
+    border:2px solid  rgb(255, 0, 0) !important;
     width: 400px;
-    font-size: 25px;
+    height: 50px;
+    font-size: 20px !important  ;
     text-align: center;
-    margin-top: 20px;
-    border: 2px black solid;
-    background-color: rgb(49,210,183) !important;
-    color: black !important;
+    margin-top: 20px;   
+    color: rgb(230, 16, 16) !important;
+    background-color: rgb(255, 255, 255) !important;
+    font-weight: 500 !important;
 }
 
 .div_form{
@@ -40,7 +43,7 @@
     text-align: left;
     width: 400px;
     position: absolute;
-    top: 80px;
+    top: 120px;
     left:200px
 
 }
@@ -52,4 +55,9 @@
 
 .div_btn_search{
     text-align: right;
+}
+
+.btn_submit{
+    width: 50%;
+    margin: 0 auto;
 }
