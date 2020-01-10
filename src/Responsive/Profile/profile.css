@@ -1,0 +1,19 @@
+.infoAvatar {
+  text-align: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 148px;
+}
+
+.infoUser {
+    font-size: medium;
+}
+
+.ui-column-title {
+    font-weight: bold;
+}
+
+.profileModal{
+}

@@ -18,6 +18,7 @@ import Room_book from './Page/room_book'
 import { useMediaQuery } from 'react-responsive'
 import Random_res from './Responsive/Random/random'
 import HomeMobile from './Responsive/Page/Home_mobile'
+import Profile_res from './Responsive/Profile/profile';
 const Desktop = ({ children }) => {
     const isDesktop = useMediaQuery({ minWidth: 992 })
     return isDesktop ? children : null
@@ -48,6 +49,7 @@ const routing = (
             <Mobile>
                 <Route path="/home" component={HomeMobile} />
                 <Route path="/home/random" component={Random_res} />
+                <Route path="/home/profile" component={Profile_res} />
             </Mobile>
 
         </div>
