@@ -1,20 +1,20 @@
-.resultContent {
+.resultContent_res {
     border:1px solid black;
     margin:0;
     width: auto;
 }
 
-.randomRoomImg, .googlePlusImg, .facebookImg, .heartImg, .starRating{
+.randomRoomImg_res, .googlePlusImg_res, .facebookImg_res, .heartImg_res, .starRating_res{
     width: fit-content;
     height: fit-content;
 }
 
-.randomRoomImg {
+.randomRoomImg_res{
     width: 100%;
     border-radius:5px;
 }
 
-.roomInfoTitle {
+.roomInfoTitle_res{
     border-radius:5px;
     margin-top: 2px;
     background: black;
@@ -23,17 +23,17 @@
     color:white;
 }
 
-.body {
+.body_res{
     display: block;
 }
 
-.body > div {
+.body_res > div {
     margin-left: 15px;
     padding: 0px;
     margin-bottom: 5px;
 }
 
-.share {
+.share_res {
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -42,62 +42,66 @@
     font-size: 15px;
 }
 
-.linkShare {
+.linkShare_res {
     border:1px solid black;
     height: 30px;
     margin-left: 5px;
 }
 
-.infoShare {
+.infoShare_res {
+    margin-top: 5px;
     display: flex;
     width: 50%;
 }
 
-.iconShare {
-    margin-left: 0px;
+.iconShare_res {
+    margin-left: 20px;
     width: fit-content;
+    padding: 0;
 }
 
-.copyBtn {
+.copyBtn_res {
      border:1px solid black;
     background: black;
     color: white;
      height: 30px;
 }
 
-.ratingShow {
+.ratingShow_res {
     display: flex;
     margin-left: 5px;
+    width: 40%;
 }
 
-.favoriteList {
+.favoriteList_res {
     margin-left:15px;
     margin-bottom:10px;
-
-}
-
-.prices{
+    width: 40%;
     display: flex;
 }
 
-.prices >div {
+.prices_res{
+    display: flex;
+}
+
+.prices_res >div {
     margin-top: 20px;
     margin-left: 150px;
     margin-bottom: 50px;
 }
 
-.percentSale {
+.percentSale_res {
     border:1px solid black;
 }
 
-.titleRating {
+.titleRating_res {
     margin-right: 1px;
 }
 
-.salePrice {
+.salePrice_res {
     color: lightslategrey;
 }
 
-.randomAgain {
+.randomAgain_res {
     background:  #31D2B7;
 }

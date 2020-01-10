@@ -43,7 +43,6 @@ const routing = (
                 <Route path="/rooms/accept" component={Accept} />
                 <Route path="/rooms/confirm" component={Confirm} />
                 <Route path="/rooms/transaction" component={Transaction} />
-
                 <Route path="/rooms_book" component={Room_book} />
             </Desktop>
             <Mobile>

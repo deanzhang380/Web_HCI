@@ -55,78 +55,80 @@ const Random_res = props => {
                     <h6> RANDOM RESULT </h6>
                 </ModalHeader>
                 <ModalBody>
-                    <div className="resultContent">
+                    <div className="resultContent_res">
                         <img
-                            className="randomRoomImg"
+                            className="randomRoomImg_res"
                             src={randomRoomImg.src}
                             alt={randomRoomImg.altText}
                         />
-                        <div className="body">
-                            <div className="roomInfo">
-                                <div className="roomInfoTitle">
+                        <div className="body_res">
+                            <div className="roomInfo_res">
+                                <div className="roomInfoTitle_res">
                                     <label>ROOM INFO</label>
                                 </div>
                                 <div>
-                                    <label>ROOM Title Book Here</label>
+                                    <label className="size30 font-weight">ROOM Title </label>
                                 </div>
                                 <div>
-                                    <label>Type Room</label>
+                                    <label style={{fontSize:"20px",fontWeight:"500"}}>Type Room</label>
                                 </div>
                             </div>
 
-                            <div >
-                                <div className="infoShare">
-                                    <div className="titleShare">
-                                        <label>SHARE NOW</label>
+                            <div style={{display:"flex"}}>
+                                <div className="infoShare_res">
+                                    <div className="titleShare_res">
+                                        <label style={{fontSize:"16px",fontWeight:"400"}}>SHARE</label>
                                     </div>
-                                    <div className="linkShare">http//...xyz</div>
-                                    <button className="copyBtn">Copy</button>
+                                    <div className="linkShare_res">http//...xyz</div>
+                                    <button className="copyBtn_res">Copy</button>
                                 </div>
-                                <div className="iconShare">
+                                <div className="iconShare_res">
                                     <img
-                                        className="facebookImg"
+                                        className="facebookImg_res"
                                         src={facebookImg.src}
                                         alt={facebookImg.altText}
                                     />
                                     <img
-                                        className="googlePlusImg"
+                                        className="googlePlusImg_res"
                                         src={googlePlusImg.src}
                                         alt={googlePlusImg.altText}
                                     />
                                 </div>
 
                             </div>
-
-                            <div className="ratingShow">
+                            <div style={{width:"fit-content",display:"flex"}}>
+                            <div className="ratingShow_res">
                                 <img
-                                    className="starRating"
+                                    className="starRating_res"
                                     src={starRatingImg.src}
                                     alt={starRatingImg.altText}
                                 />
-
-                                <div className="ratingReal">
+                                <div className="ratingReal_res">
                                     4/5
                                     </div>
 
-                                <div className="titleRating">
+                                <div className="titleRating_res">
                                     AVERAGE RATING
                                 </div>
                             </div>
-                        </div>
-                        <div className="favoriteList">
+                            <div className="favoriteList_res">
                             <img
-                                className="heartImg"
+                                className="heartImg_res"
                                 src={heartImg.src}
                                 alt={heartImg.altText}
                             />
-                            <label className="addToList">ADD TO FAVORTITES</label>
+                            <label className="addToList_res">ADD TO FAVORTITES</label>
                         </div>
-                        <div className="prices">
-                            <div className="salePrice"><strike>PRICE 32.00  </strike></div>
-                            <div className="realPrice">PRICE 25.60</div>
-                            <div className="percentSale">30% Off</div>
-                        </div>
+                        {/* <div className="prices_res">
+                            <div className="salePrice_res"><strike>PRICE 32.00  </strike></div>
+                            <div className="realPrice_res">PRICE 25.60</div>
+                            <div className="percentSale_res">30% Off</div>
+                        </div> */}
 
+                            </div>
+                            
+                        </div>
+                       
                     </div>
                 </ModalBody>
                 <ModalFooter>
