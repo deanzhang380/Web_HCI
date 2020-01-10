@@ -8,7 +8,8 @@ import Random from './Home/Random/random';
 import Schedure from './General/User/Schedure/schedure';
 import Main from './Main/main';
 import HomePage from './Page/HomePage'
-import Room from './General/Rooms/room'
+import Room from './Page/room'
+import Room_book from './Page/room_book'
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,6 +22,8 @@ const routing = (
             <Route path="/home/random" component={Random} />
             <Route path="/home/schedure" component={Schedure} />
             <Route path="/rooms" component={Room} />
+            <Route path="/rooms_book" component={Room_book} />
+
         </div>
     </Router>
 )

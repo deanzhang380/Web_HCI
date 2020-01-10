@@ -1,0 +1,41 @@
+.Searching {
+  margin-top: 20px;
+  margin-left: 100px;
+  height: 50px;
+}
+
+.Top {
+  display: flex;
+  margin-right: 0px;
+}
+
+.gridImage {
+  margin-top: 83px;
+  margin-right: 0px;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.GroupImage2 {
+  margin-left: 20%;
+  display: flex;
+}
+
+.column img {
+  width: 100%;
+  border: 3px solid black;
+
+}
+
+.GroupImage1 img {
+  width: 175%;
+  height: 100%;
+  border: 3px solid black;
+}
+
+.RoomList {
+    margin-left: -100px;
+}
+.col-lg-2{
+  padding-left: 0px;
+}
