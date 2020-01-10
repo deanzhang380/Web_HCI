@@ -23,7 +23,7 @@ const Header = () => {;
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col style={{textAlign:"center"}}>
           <Tagbar></Tagbar>
         </Col>
       </Row>

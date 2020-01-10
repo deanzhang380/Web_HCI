@@ -15,10 +15,9 @@ const Main = () => {
     <Container className="App-Container">
       <div style={{ width: "95%", margin: "0px auto" }}>
         <RecomBar></RecomBar>
-<<<<<<< HEAD
         </div>
          <div>
-          <div className="size30 font-weight ">TOP VIEW</div>
+          <div className="size30 font-weight" style={{textAlign:"center"}}>TOP VIEW</div>
            <Form_top_view></Form_top_view>
          </div>
          <div style={{width:"95%", margin:"0px auto"}}>
@@ -28,20 +27,6 @@ const Main = () => {
           <div>
             {/* <PaymentComponent></PaymentComponent> */}
           </div>
-=======
-      </div>
-      <div>
-        <div className="size30 font-weight ">TOP VIEW</div>
-        <Form_top_view></Form_top_view>
-      </div>
-      <div style={{ width: "95%", margin: "0px auto" }}>
-        <TopSellers></TopSellers>
-        <TopSellers></TopSellers>
-      </div>
-      <div>
-
-      </div>
->>>>>>> 6fa4122bb5ae2d3d2967399edce08523ca554125
     </Container>
   );
 }

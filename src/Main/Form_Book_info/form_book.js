@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Media, Button, Alert, Input } from 'reactstrap';
+
 import './form_book.css'
 import SimpleMap from './../Google/google_map'
 import ComboBox from './../ComboBox/combobox'
-import { DropdownItem, DropdownMenu, DropdownToggle, InputGroupButtonDropdown, Input, Label, FormGroup, Container, Row, Col, Form, Media, Button } from 'reactstrap';
+import { Alert,DropdownItem, DropdownMenu, DropdownToggle, InputGroupButtonDropdown, Input, Label, FormGroup, Container, Row, Col, Form, Media, Button } from 'reactstrap';
 import './form_book.css'
 import DateTime from "../../General/User/dateTime"
 import googlePlusImg from "../../Img/Google Plus.png"
