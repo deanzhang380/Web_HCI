@@ -21,7 +21,7 @@ import { Media } from "reactstrap";
 import Logo_img from "./../../Img/logo_navbar.jpg";
 
 var imgStyle = {
-  minWidth: "40%",
+  minWidth: "53%",
   maxWidth: "20%", "background-color": "rgb(247,247,247)",
 
 };
@@ -45,7 +45,7 @@ const MenuBar = props => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <Row color="light" light expand="md" className="nb">
+    <Row color="light" light expand="md" className="nb" >
       <Col lg="3" style={text_left}>
 
         <Media>

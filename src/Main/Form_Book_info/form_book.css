@@ -32,7 +32,7 @@
 
 .titleContent {
   width: fit-content;
-  margin: 20px 30px;
+  margin: 60px 30px 10px;
   font-size: 20px ;
   font-weight: 600
 }
@@ -122,4 +122,9 @@
   width: fit-content;
   margin: auto;
   background-color: darkred;
+}
+
+.css-2b097c-container{
+  width: 50%;
+  margin: 0px auto;
 }
