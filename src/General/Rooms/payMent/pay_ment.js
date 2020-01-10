@@ -31,9 +31,9 @@ const Payment = props => {
                             <div className="step3">STEP3</div>
                         </div>
                         <div className="PaymentTitle">
-                            <div className="AddPaymentTitle">ADD PAYMENT</div>
-                            <div className="AcceptTitle">ACCEPT RULES AND TERMS</div>
-                            <div className="ConfirmTitle">CONFIRM AND PAY</div>
+                            <div className="AddPaymentTitle_step1">ADD PAYMENT</div>
+                            <div className="AcceptTitle_step1">ACCEPT RULES AND TERMS</div>
+                            <div className="ConfirmTitle_step1">CONFIRM AND PAY</div>
                         </div>
                     </div>
                     <div className="PaymentList">
