@@ -1,8 +1,7 @@
 .outside_card{
-    width: 320px;
+    width: fit-content;
     height: 350px;
-    margin-right: 10px;
-    margin-left: 30px;
+    margin:0px auto;
     /* border: 1px black solid; */
 }
 
@@ -17,12 +16,13 @@
     text-align: left;
     margin-left: 10px;
     font-weight: 600;
+    color: black;
 }
 
 .price{
     display: flex;
     margin-left: 10px;
-   
+    color: black;
 }
 .origin-price{
     margin-right: 5px;
@@ -30,9 +30,10 @@
     text-decoration: line-through;
 }
 .sale-off{
-   
+   text-align: center;
     border: 1px black solid;
     margin-left: 70px;
     width: 90px;
     height: 30px;
+    color: black;
 }

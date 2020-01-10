@@ -65,9 +65,10 @@ const Form_fast_book = (props) => {
             </InputGroupButtonDropdown>
           </div>
         </FormGroup>
-        <Button>Submit</Button>
+        <div className="btn_submit" ><Button style={{ width: "100%" }} color='danger'>SEARCH</Button></div>
       </Form>
-      <Button className="btn_random" onClick={() => window.location.href = 'home/random'}> Random</Button>
+
+      <Button className="btn_random " onClick={() => window.location.href = 'home/random'}> RANDOM</Button>
 
       {/* <FormGroup>
         <Label>Guests</Label>

@@ -1,0 +1,14 @@
+.navbar_res{
+    overflow: hidden;
+    background-color:white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:5%;
+   
+    
+}
+
+.btn_navbar_res{
+   margin: 0 5px;
+}

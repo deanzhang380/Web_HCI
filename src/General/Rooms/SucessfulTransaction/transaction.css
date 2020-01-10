@@ -1,0 +1,63 @@
+.TransactionModal {
+  border: 1px solid black;
+}
+
+.Step {
+  display: flex;
+}
+
+.Step > div {
+  margin: auto;
+}
+
+.PaymentTitle {
+  display: flex;
+  color: white;
+  margin: auto;
+  width: fit-content;
+}
+
+.PaymentTitle > div {
+  border: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.InfoTransaction  {
+  border: 3px solid rgb(0, 0, 0);
+  height: 450px;
+  overflow-y: auto;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+  text-align: right;
+}
+
+.InfoTransaction >div{
+  display: flex;
+  padding: 20px;
+  border  : 1px solid skyblue;
+}
+
+.ContactBtn {
+  margin:auto auto 20px auto ;
+  text-align: center;
+}
+
+.roomImage >img {
+  width: 200px;
+  margin-left: 150px;
+}
+
+.avatarImage >img {
+  margin-left: 170px;
+}
+
+.ContactHostBtn {
+  padding-left: 40px;
+  padding-right: 40px;
+}

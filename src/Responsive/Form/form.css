@@ -1,0 +1,48 @@
+.outside_res{
+    text-align: left;
+    width: 100%;
+    height: max-content;
+    padding: 30px;
+    background: white;
+}
+
+.Title{
+    text-align: center;
+    font-size: 30px;
+    color: red !important;
+}
+
+.ci_co{
+    display: flex;
+}
+
+.guests_input{
+    display: flex;
+}
+
+.link{
+    text-align: right;
+}
+
+.btn_random_res{
+    width: 50%;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.div_form_res{
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.btn_search{
+    background: red !important;
+    
+}
+
+.div_btn_search{
+    text-align: right;
+}
+

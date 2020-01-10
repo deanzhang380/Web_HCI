@@ -43,7 +43,7 @@ const Random = props => {
     const [modal, setModal] = useState(true);
     const toggle = () => setModal(!modal);
     const closeBtn = (
-        <button className="close" onClick={() => (window.location.href = "/")}>
+        <button className="close" onClick={() => (window.location.href = "/home")}>
             &times;
     </button>
     );
@@ -130,10 +130,10 @@ const Random = props => {
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="danger" onClick={toggle}>
+                    <Button color="danger" href="/rooms">
                         Book Now
           </Button>{" "}
-                    <Button color="info" className="randomAgain" onClick={() => (window.location.href = "/")}>
+                    <Button color="info" className="randomAgain" onClick={() => (window.location.href = "/home/random")}>
                         Random Again
           </Button>
                 </ModalFooter>

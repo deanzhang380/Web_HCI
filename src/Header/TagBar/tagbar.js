@@ -8,7 +8,7 @@ const Tagbar = (props) => {
     const toggle = () => setDropdownOpen(prevState => !prevState);
 
     return (
-        <div className="div-tagbar">
+        <div className="div-tagbar" >
             <Button className="btn-style btn-seeall" color="link">
                 SEE ALL
             </Button>
