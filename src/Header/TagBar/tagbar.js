@@ -17,11 +17,8 @@ const Tagbar = (props) => {
                     DATE
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem header>Header</DropdownItem>
-                    <DropdownItem disabled>Action</DropdownItem>
-                    <DropdownItem>Another Action</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Another Action</DropdownItem>
+                    <DropdownItem >Short Vocation</DropdownItem>
+                    <DropdownItem >Long Vocation</DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown className="btn-style">
@@ -29,11 +26,10 @@ const Tagbar = (props) => {
                     PRICE
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem header>Header</DropdownItem>
-                    <DropdownItem disabled>Action</DropdownItem>
-                    <DropdownItem>Another Action</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Another Action</DropdownItem>
+                    <DropdownItem >Above 2000$</DropdownItem>
+                    <DropdownItem >500$ ~ 2000$</DropdownItem>
+                    <DropdownItem>100$ ~ 500$</DropdownItem>
+                    <DropdownItem>Below 100$</DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown className="btn-style">
@@ -41,11 +37,10 @@ const Tagbar = (props) => {
                     RATING
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem header>Header</DropdownItem>
-                    <DropdownItem disabled>Action</DropdownItem>
-                    <DropdownItem>Another Action</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Another Action</DropdownItem>
+                    <DropdownItem>5 Star</DropdownItem>
+                    <DropdownItem >4 Star</DropdownItem>
+                    <DropdownItem>3 Star</DropdownItem>
+                    <DropdownItem>2 ~ 1 Star</DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown   className="btn-style">
@@ -53,11 +48,10 @@ const Tagbar = (props) => {
                     TYPE
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem header>Header</DropdownItem>
-                    <DropdownItem disabled>Action</DropdownItem>
-                    <DropdownItem>Another Action</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Another Action</DropdownItem>
+                    <DropdownItem>Place</DropdownItem>
+                    <DropdownItem>Resort</DropdownItem>
+                    <DropdownItem>Coffee</DropdownItem>
+                    <DropdownItem>Restaurant</DropdownItem>
                 </DropdownMenu>
             </UncontrolledDropdown>
         </div>

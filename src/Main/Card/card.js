@@ -18,12 +18,12 @@ const Card_info = (props) => {
         src={img}
         alt="My PlaceHolder Picture">
       </Media>
-      <div className="card_Title"> Card Title</div>
-      <div className="card_sub_Title"> Brand</div>
+      <div className="card_Title"> The PoundHouse - Magic Place</div>
+      <div className="card_sub_Title"> Mayne Island</div>
       <div className="price">
         <div className="origin-price">AED 32.00</div>
         <div>AED 25.60</div>
-        <div className="sale-off">30% Off</div>
+        <div className="sale-off" style={{backgroundColor:"red", color:"white"}}>30% Off</div>
       </div>
     </a>
   );
