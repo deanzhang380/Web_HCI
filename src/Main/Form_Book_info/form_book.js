@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Media, Button, Alert, Input } from 'reactstrap';
 import './form_book.css'
 import SimpleMap from './../Google/google_map'
 import ComboBox from './../ComboBox/combobox'
-import { DropdownItem, DropdownMenu, DropdownToggle, InputGroupButtonDropdown, Input, Label, FormGroup, Container, Row, Col, Form, Media, Button } from 'reactstrap';
-import './form_book.css'
+import { DropdownItem, Alert, DropdownMenu, DropdownToggle, InputGroupButtonDropdown, Input, Label, FormGroup, Container, Row, Col, Form, Media, Button } from 'reactstrap';
 import DateTime from "../../General/User/dateTime"
 import googlePlusImg from "../../Img/Google Plus.png"
 import facebookImg from "../../Img/Facebook.png"
@@ -57,7 +55,6 @@ We'll stop to take in stunning vistas of Himalayan peaks and pass through rhodod
                 <Alert color="dark" style={{ textAlign: "left" }}>
                   Rule 3:
           </Alert>
-
               </div>
             </Col>
           </Row>
@@ -69,55 +66,40 @@ We'll stop to take in stunning vistas of Himalayan peaks and pass through rhodod
       <Form className="form_book_payment">
         <div style={{ width: "80%", margin: "20px auto" }}>
           <div style={{ margin: "10px 0 0 10px" }}>
-            <div className="price margin_top_auto">
+            <div className="price margin_top_auto" style={{ width: "fit-content", margin: "20px auto" }}>
               <div className="origin-price">AED 32.00</div>
               <div className="size18">AED 25.60</div>
-              <div className="sale-off" style={{ margin: "0 0 0 300px", backgroundColor: "red" }}><div style={{ color: "white" }}>30% Off</div></div>
-              <div className="txt_left "><a href="#" className="font-weight text_underline size14 color_black">Read More</a> </div>
+              <div className="sale-off" style={{ margin: "0 0 0 200px", backgroundColor: "red" }}><div style={{ color: "white" }}>30% Off</div></div>
+              {/* <div className="txt_left "><a href="#" className="font-weight text_underline size14 color_black">Read More</a> </div> */}
 
             </div>
-            <div className="form_book_contact_info" style={{ height: "40%", margin: "50px 0px" }}>
-              <Row style={{ width: "100%", height: "100%", margin: "0px 0px" }}>
-                <Col xs="6" style={{ width: "50%", height: "100%", border: "solid black 1px" }}>.col-6</Col>
-                <Col xs="6" style={{ width: "50%", height: "100%", border: "solid black 1px" }}>.col-6</Col>
-              </Row>
-            </div>
+            <hr style={{
+              width: "70%", margin: "20px auto", "border-top": "1px solid rgba(0,0,0,.8)"
+            }}></hr>
             <div className="titleContent">DATES *</div>
             <div className="DateBook">
               <DateTime></DateTime>
             </div>
             <div className="titleContent">GUEST *</div>
-            <FormGroup>
-              <div className="Guests_input">
-                <Input className="_input" />
-                <InputGroupButtonDropdown addonType="append" isOpen={dropdownOpen} toggle={toggleDropDown}>
-                  <DropdownToggle caret>
-                  </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem header>Header</DropdownItem>
-                    <DropdownItem disabled>Action</DropdownItem>
-                    <DropdownItem>Another Action</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Another Action</DropdownItem>
-                  </DropdownMenu>
-                </InputGroupButtonDropdown>
+            <ComboBox ></ComboBox>
+            <div style={{ margin: "0px auto", width: "fit-content" }}>
+              <div className="PaymentMethod">
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="radio1" />{' '}
+                    DEPOSIT
+          </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="radio1" />{' '}
+                    PAY OFF
+          </Label>
+                </FormGroup>
               </div>
-            </FormGroup >
-            <div className="PaymentMethod">
-              <FormGroup check>
-                <Label check>
-                  <Input type="radio" name="radio1" />{' '}
-                  DEPOSIT
-          </Label>
-              </FormGroup>
-              <FormGroup check>
-                <Label check>
-                  <Input type="radio" name="radio1" />{' '}
-                  PAY OFF
-          </Label>
-              </FormGroup>
+
             </div>
-            <div className="DepositePercent">
+            <div className="DepositePercent" >
               <div className="Deposite1">
                 10%
         </div>
@@ -128,7 +110,7 @@ We'll stop to take in stunning vistas of Himalayan peaks and pass through rhodod
                 70%
         </div>
             </div>
-            <div className="titleContent">ROOM RENTAL METHOD *</div>
+            <div className="titleContent" style={{ fontSize: "20px", fontWeight: "600" }}>ROOM RENTAL METHOD *</div>
             <div className="RoomRentalMethod">
               <div style={{ textAlign: "right" }}>
                 <div className="RoomRentalMethodRow1">
@@ -159,31 +141,18 @@ We'll stop to take in stunning vistas of Himalayan peaks and pass through rhodod
                 <img className="googlePlusImg" src={googlePlusImg} />
               </div>
             </div>
-            <div className="titleContent">ACCOMPANIED SERVICE *</div>
-            <FormGroup>
-              <div className="AccompaniedService">
-                <Input className="_input" />
-                <InputGroupButtonDropdown addonType="append" isOpen={dropdownOpen} toggle={toggleDropDown}>
-                  <DropdownToggle caret>
-                  </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem header>Header</DropdownItem>
-                    <DropdownItem disabled>Action</DropdownItem>
-                    <DropdownItem>Another Action</DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>Another Action</DropdownItem>
-                  </DropdownMenu>
-                </InputGroupButtonDropdown>
-              </div>
-            </FormGroup>
+            <div className="titleContent" style={{ fontSize: "20px", fontWeight: "600" }}>ACCOMPANIED SERVICE *</div>
+            <ComboBox ></ComboBox>
+            <div style={{ width: "fit-content", margin: "20px auto" }}>
+              <Button className="SaveButton" color="danger" >
+                BOOK NOW
+              </Button>
+            </div>
 
-            <Button className="SaveButton" color="danger" >
-              BOOK NOW
-      </Button>
           </div>
         </div>
       </Form>
-    </div>
+    </div >
   );
 }
 
