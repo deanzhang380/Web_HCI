@@ -14,20 +14,42 @@ import Transaction from './General/Rooms/SucessfulTransaction/transaction'
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Confirm from './General/Rooms/Confirm/confirm';
+import Room_book from './Page/room_book'
+import { useMediaQuery } from 'react-responsive'
+import Random_res from './Responsive/Random/random'
+import HomeMobile from './Responsive/Page/Home_mobile'
+const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 992 })
+    return isDesktop ? children : null
+}
+
+const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 767 })
+    return isMobile ? children : null
+}
 
 const routing = (
     <Router>
         <div>
-            <Route path="/" component={App} />
-            <Route path="/home" component={HomePage} />
-            <Route path="/home/profile" component={Profile} />
-            <Route path="/home/random" component={Random} />
-            <Route path="/home/schedure" component={Schedure} />
-            <Route path="/rooms" component={Room} />
-            <Route path="/rooms/payment" component={Payment} />
-            <Route path="/rooms/accept" component={Accept} />
-            <Route path="/rooms/confirm" component={Confirm} />
-            <Route path="/rooms/transaction" component={Transaction} />
+
+            <Desktop>
+                <Route path="/" component={App} />
+                <Route path="/home" component={HomePage} />
+                <Route path="/home/profile" component={Profile} />
+                <Route path="/home/random" component={Random} />
+                <Route path="/home/schedure" component={Schedure} />
+                <Route path="/rooms" component={Room} />
+                <Route path="/rooms/payment" component={Payment} />
+                <Route path="/rooms/accept" component={Accept} />
+                <Route path="/rooms/confirm" component={Confirm} />
+                <Route path="/rooms/transaction" component={Transaction} />
+
+                <Route path="/rooms_book" component={Room_book} />
+            </Desktop>
+            <Mobile>
+                <Route path="/home" component={HomeMobile} />
+                <Route path="/home/random" component={Random_res} />
+            </Mobile>
 
         </div>
     </Router>

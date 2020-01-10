@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col,Media,InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 import "./footer.css"
-import img from './logo_dai.jpg'
+import img from './../Img/logo_navbar.jpg'
 import logo1 from './../Img/facebook_icon.png'
 import cdc_logo from './../Img/CreditCardLogos.jpg'
 var imgStyle = {

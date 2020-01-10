@@ -27,7 +27,7 @@
     overflow: visible   ;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    background: rgba(252, 252, 252, 0.8);
+    width:1920px; /* Full width */
+    background: rgb(252, 252, 252);
     height: 80px;
 }

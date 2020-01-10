@@ -12,22 +12,26 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem
+    DropdownItem, Form
 } from "reactstrap";
-import gridImage1 from "../../Img/Grid5.png"
-import gridImage2 from "../../Img/Grid1.png"
-import logoImage from "../../Img/logo_navbar.png"
-import Form_book from '../../Main/Form_Book_info/form_book'
-import RecomBar from '../../Main/Recommend_Bar/recommend_bar'
-import Footer from '../../Footer/footer'
-import Reviews from '../../Main/Reviews/reviews';
-import MenuBar_Rooms from './../../Header/Navbar/navbar_rooms'
+import gridImage1 from "../Img/Grid5.png"
+import gridImage2 from "../Img/Grid1.png"
+import logoImage from "../Img/logo_navbar.jpg"
+import Form_book from '../Main/Form_Book_info/form_book'
+import RecomBar from '../Main/Recommend_Bar/recommend_bar'
+import Footer from '../Footer/footer'
+import Reviews from '../Main/Reviews/reviews';
+import MenuBar_Rooms from '../Header/Navbar/navbar_rooms'
+import Form_book_info from '../Main/Form_Book_info/room_book_info'
+import Form_book_payment from '../Main/Form_Book_info/room_book_payment'
+import Form_book_method_payment from '../Main/Form_Book_info/form_book_method_payment'
+
 var imgStyle = {
     minWidth: "100%",
     maxWidth: "135%", "background-color": "rgb(247,247,247)",
 };
 
-function Room() {
+function Room_book() {
     return (
         <div className="Room">
             <MenuBar_Rooms></MenuBar_Rooms>
@@ -55,7 +59,13 @@ function Room() {
                 </div>
             </div>
             <div className="RoomBookForm">
-                <Form_book></Form_book>
+            <div className="form_book">
+                 <Form_book_info></Form_book_info>
+                 <Form className="form_book_payment">
+                {/* <Form_book_payment></Form_book_payment> */}
+                <Form_book_method_payment></Form_book_method_payment>
+                </Form>
+    </div>  
             </div>
             <div className="Review">
                 <Reviews></Reviews>
@@ -70,4 +80,4 @@ function Room() {
     );
 }
 
-export default Room;
+export default Room_book;

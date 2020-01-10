@@ -19,7 +19,7 @@ class DateTime extends Component {
 
     render() {
         return (
-            <div className="App">
+            <div className="App" >
                 <DateRangePicker
                     showDefaultInputIcon={true}
                     startDateId="startDate"
@@ -33,6 +33,7 @@ class DateTime extends Component {
                     isOpen={true}
                     openDatePicker={true}
                     defaultShow={this.defaultShow}
+                    keepOpenOnDateSelect={true}
                 />
             </div>
         );
