@@ -9,12 +9,13 @@ import Gallery from './../Custom_carousel/gallery'
 import Form_book from './Form_Book_info/form_book'
 import TopSellers from './Top_Seller/topsell'
 import Reviews from './../Main/Reviews/reviews'
-import PaymentComponent from './AddPayment/payment'
-const Main = () => {;
+const Main = () => {
+  ;
   return (
     <Container className="App-Container">
-        <div style={{width:"95%", margin:"0px auto"}}>
+      <div style={{ width: "95%", margin: "0px auto" }}>
         <RecomBar></RecomBar>
+<<<<<<< HEAD
         </div>
          <div>
           <div className="size30 font-weight ">TOP VIEW</div>
@@ -27,6 +28,20 @@ const Main = () => {;
           <div>
             {/* <PaymentComponent></PaymentComponent> */}
           </div>
+=======
+      </div>
+      <div>
+        <div className="size30 font-weight ">TOP VIEW</div>
+        <Form_top_view></Form_top_view>
+      </div>
+      <div style={{ width: "95%", margin: "0px auto" }}>
+        <TopSellers></TopSellers>
+        <TopSellers></TopSellers>
+      </div>
+      <div>
+
+      </div>
+>>>>>>> 6fa4122bb5ae2d3d2967399edce08523ca554125
     </Container>
   );
 }

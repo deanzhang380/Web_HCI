@@ -6,6 +6,8 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import Profile from './General/User/Profile/profile';
 import Random from './Home/Random/random';
 import Schedure from './General/User/Schedure/schedure';
+import Main from './Main/main'
+import Room from './General/Rooms/room'
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,9 +15,11 @@ const routing = (
     <Router>
         <div>
             <Route path="/" component={App} />
-            <Route path="/profile" component={Profile} />
-            <Route path="/random" component={Random} />
-            <Route path="/schedure" component={Schedure} />
+            <Route path="/home" component={Main} />
+            <Route path="/home/profile" component={Profile} />
+            <Route path="/home/random" component={Random} />
+            <Route path="/home/schedure" component={Schedure} />
+            <Route path="/rooms" component={Room} />
         </div>
     </Router>
 )

@@ -22,11 +22,11 @@ import Logo_img from "./../../Img/logo_navbar.jpg";
 
 var imgStyle = {
   minWidth: "40%",
-  maxWidth: "20%","background-color":"rgb(247,247,247)",
-  
+  maxWidth: "20%", "background-color": "rgb(247,247,247)",
+
 };
-var text_left={
-  "text-align":"left"
+var text_left = {
+  "text-align": "left"
 }
 // window.onscroll = function() {scrollFunction()};
 
@@ -44,7 +44,7 @@ var flag = 1;
 const MenuBar = props => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  return ( 
+  return (
     <Row color="light" light expand="md" className="nb">
       <Col lg="3" style={text_left}>
 
@@ -77,9 +77,9 @@ const MenuBar = props => {
                 Log-in
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem onClick={() => window.location.href = '/profile'}>Profile</DropdownItem>
+                <DropdownItem onClick={() => window.location.href = 'home/profile'}>Profile</DropdownItem>
                 <DropdownItem>Account</DropdownItem>
-                <DropdownItem onClick={() => window.location.href = '/schedure'}>Your Schedure</DropdownItem>
+                <DropdownItem onClick={() => window.location.href = 'home/schedure'}>Your Schedure</DropdownItem>
                 <DropdownItem>Your Booking</DropdownItem>
                 <DropdownItem>Favorite List</DropdownItem>
                 <DropdownItem>Payment List</DropdownItem>
