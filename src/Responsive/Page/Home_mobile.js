@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Button ,ButtonDropdown,DropdownToggle,DropdownItem,DropdownMenu,InputGroupButtonDropdown} from 'reactstrap';
+import { Container, Row, Col, Button ,ButtonDropdown,DropdownToggle,DropdownItem,DropdownMenu,InputGroupButtonDropdown,UncontrolledDropdown} from 'reactstrap';
 import Header_Mobile from './../Header/header'
 import Form_Fast_Book from './../Form/form'
 import Card_info from '../Card/card'
@@ -19,7 +19,7 @@ const HomeMobile = (props) => {
             <div style={{width:"fit-content", margin:"0 auto"}}>
               <Button outline color="danger" className="btn_navbar_res">Home</Button>
               <Button outline color="danger" className="btn_navbar_res">Favorites</Button>
-              <Button outline color="danger" className="btn_navbar_res">Log-in</Button>
+              <Button outline color="danger" className="btn_navbar_res" onClick={() => window.location.href = 'home/profile'}>Profile</Button>
               <ButtonDropdown direction="up" style={{width:"10%"}} isOpen={dropdownOpen} toggle={toggleDropDown}>
               <DropdownToggle caret color="danger">
     Language
