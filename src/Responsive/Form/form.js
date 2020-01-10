@@ -68,7 +68,7 @@ const Form_fast_book = (props) => {
         <Button>Submit</Button>
       </Form>
       <div style={{width:"100%", textAlign:"center"}}>
-       <Button className="btn_random_res" onClick={() => window.location.href = 'home/random'}> Random</Button>
+       <Button outline color="danger" className="btn_random_res" onClick={() => window.location.href = 'home/random'}> Random</Button>
       </div>
       
 

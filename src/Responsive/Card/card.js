@@ -12,7 +12,7 @@ var imgStyle = {
 
 const Card_info = (props) => {
   return (
-    <div className ="outside_card_res">
+    <a className ="outside_card_res">
         <Media style={imgStyle}
               object
               src={img}
@@ -25,7 +25,7 @@ const Card_info = (props) => {
           <div>AED 25.60</div>
           <div className="sale-off_res">30% Off</div>
         </div>
-    </div>
+    </a>
   );
 };
 

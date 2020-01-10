@@ -12,10 +12,24 @@ import Room from './Page/room'
 import Room_book from './Page/room_book'
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useMediaQuery } from 'react-responsive'
+import Random_res from './Responsive/Random/random'
+import HomeMobile from './Responsive/Page/Home_mobile'
+const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 992 })
+    return isDesktop ? children : null
+  }
+ 
+  const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 767 })
+    return isMobile ? children : null
+  }
 
 const routing = (
     <Router>
         <div>
+            
+            <Desktop>
             <Route path="/" component={App} />
             <Route path="/home" component={HomePage} />
             <Route path="/home/profile" component={Profile} />
@@ -23,7 +37,12 @@ const routing = (
             <Route path="/home/schedure" component={Schedure} />
             <Route path="/rooms" component={Room} />
             <Route path="/rooms_book" component={Room_book} />
-
+             </Desktop>
+        <Mobile>
+        <Route path="/home" component={HomeMobile} />
+            <Route path="/home/random" component={Random_res} />
+        </Mobile>
+        
         </div>
     </Router>
 )

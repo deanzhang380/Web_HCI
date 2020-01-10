@@ -16,12 +16,13 @@
     text-align: left;
     margin-left: 10px;
     font-weight: 600;
+    color: black;
 }
 
 .price{
     display: flex;
     margin-left: 10px;
-   
+    color: black;
 }
 .origin-price{
     margin-right: 5px;
@@ -34,4 +35,5 @@
     margin-left: 70px;
     width: 90px;
     height: 30px;
+    color: black;
 }
