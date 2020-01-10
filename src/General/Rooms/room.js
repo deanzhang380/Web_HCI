@@ -1,6 +1,7 @@
 import React from "react";
 import "./room.css";
 import {
+    Media,
     Row,
     Col,
     Input,
@@ -15,15 +16,27 @@ import {
 } from "reactstrap";
 import gridImage1 from "../../Img/Grid5.png"
 import gridImage2 from "../../Img/Grid1.png"
+import logoImage from "../../Img/logo_navbar.jpg"
 import Form_book from '../../Main/Form_Book_info/form_book'
 import RecomBar from '../../Main/Recommend_Bar/recommend_bar'
 import Footer from '../../Footer/footer'
+import Reviews from '../../Main/Reviews/reviews';
+
+var imgStyle = {
+    minWidth: "40%",
+    maxWidth: "20%", "background-color": "rgb(247,247,247)",
+};
 
 function Room() {
     return (
         <div className="Room">
             <Row color="light" light expand="md" className="nb">
                 <Col lg="3" >
+                    <Media style={imgStyle}
+                        object
+                        src={logoImage}></Media>
+                </Col>
+                <Col lg="3">
                     <Input
                         className="Searching"
                         type="textarea"
@@ -34,7 +47,7 @@ function Room() {
                         height="100"
                     />
                 </Col>
-                <Col lg="9">
+                <Col lg="6">
                     <Navbar className="font-style float-right" light expand="md">
                         <Nav className="mr-auto" navbar>
                             <NavLink href="">Home</NavLink>
@@ -102,6 +115,9 @@ function Room() {
             </div>
             <div className="RoomBookForm">
                 <Form_book></Form_book>
+            </div>
+            <div className="Review">
+                <Reviews></Reviews>
             </div>
             <div className="RoomList">
                 <RecomBar></RecomBar>
