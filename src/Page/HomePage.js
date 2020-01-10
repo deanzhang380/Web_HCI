@@ -4,6 +4,7 @@ import Header from './../Header/header'
 import Main from './../Main/main'
 import Footer from './../Footer/footer'
 import { useMediaQuery } from 'react-responsive'
+import HomeMobile from '../Responsive/Page/Home_mobile'
 
 const Desktop = ({ children }) => {
     const isDesktop = useMediaQuery({ minWidth: 992 })
@@ -27,8 +28,9 @@ const HomePage = () => {
           </Container>
       </Desktop>
         <Mobile>
-            <div>This is mobile Responsive.</div>
+          <HomeMobile></HomeMobile>
         </Mobile>
+        
     </div>
   );
 }
