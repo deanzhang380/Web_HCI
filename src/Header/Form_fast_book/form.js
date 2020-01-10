@@ -21,7 +21,7 @@ const Form_fast_book = (props) => {
 
   const toggleSplit = () => setSplitButtonOpen(!splitButtonOpen);
 
-  const onSubmit = () => props.history.push('/profile');
+  const onSubmit = () => props.history.push('/home/profile');
 
   return (
     <div className="div_form">
@@ -67,7 +67,7 @@ const Form_fast_book = (props) => {
         </FormGroup>
         <Button>Submit</Button>
       </Form>
-      <Button className="btn_random" onClick={() => window.location.href = '/random'}> Random</Button>
+      <Button className="btn_random" onClick={() => window.location.href = 'home/random'}> Random</Button>
 
       {/* <FormGroup>
         <Label>Guests</Label>
