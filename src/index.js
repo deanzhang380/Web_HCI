@@ -50,6 +50,7 @@ const routing = (
                 <Route path="/home" component={HomeMobile} />
                 <Route path="/home/random" component={Random_res} />
                 <Route path="/home/profile" component={Profile_res} />
+                
             </Mobile>
 
         </div>

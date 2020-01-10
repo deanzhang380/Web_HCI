@@ -10,7 +10,7 @@ const Reviews = () => {;
             Reviews (380)
         </div>
         <div style={{fontSize:"22px"}}>
-            Averange Rate: <span style={{fontWeight:"600",fontSize:"28px"}}>4</span>/5
+            Averange Rate: <span style={{fontWeight:"600",fontSize:"28px"}}>4.0</span>/5
         </div>
         </div>
         
