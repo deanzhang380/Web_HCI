@@ -144,11 +144,10 @@ We'll stop to take in stunning vistas of Himalayan peaks and pass through rhodod
             <div className="titleContent" style={{ fontSize: "20px", fontWeight: "600" }}>ACCOMPANIED SERVICE *</div>
             <ComboBox ></ComboBox>
             <div style={{ width: "fit-content", margin: "20px auto" }}>
-              <Button className="SaveButton" color="danger" >
+              <Button className="SaveButton" color="danger" href="/rooms/transaction" >
                 BOOK NOW
               </Button>
             </div>
-
           </div>
         </div>
       </Form>
