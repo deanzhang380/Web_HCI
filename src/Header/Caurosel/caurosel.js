@@ -13,11 +13,11 @@ import img2 from "./../../Img/img2.jpg";
 import img3 from "./../../Img/img3.jpg";
 const items = [
   {
-    src: img1,
+    src: img2,
 
   },
   {
-    src: img2,
+    src: img1,
 
   },
   {

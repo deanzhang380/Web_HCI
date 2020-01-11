@@ -51,7 +51,12 @@ const routing = (
                 <Route path="/home" component={HomeMobile} />
                 <Route path="/home/random" component={Random_res} />
                 <Route path="/home/profile" component={Profile_res} />
-                
+                 <Route path="/rooms_book/payment" component={Payment} />
+                <Route path="/rooms_book/accept" component={Accept} />
+                <Route path="/rooms_book/confirm" component={Confirm} />
+                <Route path="/rooms" component={Room} />
+                <Route path="/rooms_book" component={Room_book} />
+                <Route path="/home/schedure" component={Schedure} />
             </Mobile>
 
         </div>

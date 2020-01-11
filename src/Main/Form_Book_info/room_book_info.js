@@ -20,7 +20,7 @@ const Form_book_info = () => {
 We'll stop to take in stunning vistas of Himalayan peaks and pass through rhododendron forests. We’ll visit Nangi, the first remote village of Nepal to have wireless Internet and stay in villages inhabited by the Magar people, an indigenous ethnic group of Nepal. Meals will take place at community lodges and teahouses and we'll spend our nights at community homestays run by villagers. </div>
         <div className="txt_left "><a href="#" className="font-weight text_underline size14 color_black">Read More</a> </div>
       </div>
-      <div style={{ height: "25%", margin: "50px 0px" }}>
+      <div style={{ height: "15%", margin: "50px 0px" }}>
         <div className="dateTime" style={{
           width: "100%", margin: "30px 70px", textAlign: "left "
         }}>

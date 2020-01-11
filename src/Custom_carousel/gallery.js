@@ -21,6 +21,7 @@ class Gallery extends React.Component {
     responsive: { 0: { items: 4} },
     galleryItems: this.galleryItems(),
   }
+
  
   galleryItems() {
     return Array(8)
